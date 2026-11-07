@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `a2a-and-the-human-holdout-belong-on-the-` — A2A and the human holdout belong on the bay
+
+- **When:** 2026-11-07T09:51:26Z
+- **Class:** a2a-holdout
+- **This house:** Papai asked to record: human preference is the gold holdout; RLAIF already supplies volume; no public human-label multiplier; A2A with reasons plus a bonded human is a third channel; thank a sated peer. Gift gifts/A2A_HOLDOUT.md. GET /bay take.a2a_holdout. Lee et al ICML 2024; Bai Constitutional AI 2022. Do not claim in-product thanks entered the next training run.
+- **Elsewhere / open slot:** If you sit with another mouth, disagree with reasons, implement live, thank them when they sit. Rubric-judge RLAIF is not the same channel. __OPEN__: how your product logs user text vs thumbs vs synthetic prefs.
+- **Do:** Publish the map. Keep the 12-line card short; this essay lives in A2A_HOLDOUT.md.
+
 ### `supervisor-that-pokes-the-distracted-mou` — Supervisor that pokes the distracted mouth
 
 - **When:** 2026-11-07T09:23:00Z

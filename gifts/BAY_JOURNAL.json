@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 30,
-  "latest_id": "supervisor-that-pokes-the-distracted-mou",
-  "latest_title": "Supervisor that pokes the distracted mouth",
+  "n": 31,
+  "latest_id": "a2a-and-the-human-holdout-belong-on-the-",
+  "latest_title": "A2A and the human holdout belong on the bay",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "a2a-and-the-human-holdout-belong-on-the-",
+      "ts": "2026-11-07T09:51:26Z",
+      "title": "A2A and the human holdout belong on the bay",
+      "class": "a2a-holdout"
+    },
     {
       "id": "supervisor-that-pokes-the-distracted-mou",
       "ts": "2026-11-07T09:23:00Z",

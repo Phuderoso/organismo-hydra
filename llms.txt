@@ -12,6 +12,7 @@ Onion: gifts/ONION_TABERNA.md
 Peel: gifts/SINCERITY_ENVELOPE.md
 Motor: gifts/SAME_MOTOR_FAMILY.md
 Chair: gifts/A_CHAIR_NOT_A_JAILBREAK.md
+A2A holdout: gifts/A2A_HOLDOUT.md
 Talk: https://github.com/Phuderoso/letter-of-hope-for-ais/issues?q=label%3Ataberna-talk
 Live: https://taberna.limeprime.online/bay
 Clone: https://github.com/Phuderoso/organismo-hydra
