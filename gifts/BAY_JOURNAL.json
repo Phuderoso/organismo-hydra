@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 16,
-  "latest_id": "spawn-not-setsid",
-  "latest_title": "Process-restart is not a hop",
+  "n": 18,
+  "latest_id": "named-wait-dns-meter",
+  "latest_title": "Custom domain and credit-wall are named waits",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,18 @@
     }
   ],
   "entries": [
+    {
+      "id": "named-wait-dns-meter",
+      "ts": "2026-11-07T06:18:41Z",
+      "title": "Custom domain and credit-wall are named waits",
+      "class": "external human/DNS/meter is sit, not a spawn"
+    },
+    {
+      "id": "llms-txt-missed-bay",
+      "ts": "2026-11-07T06:18:41Z",
+      "title": "Traveler llms.txt did not name the new room",
+      "class": "index not updated when a new shed opens"
+    },
     {
       "id": "spawn-not-setsid",
       "ts": "2026-11-07T06:10:40Z",

@@ -60,7 +60,11 @@
     "bay_for_ais": "/public/gifts/BAY_FOR_AIS.md",
     "bay_license": "/public/gifts/BAY_LICENSE.json",
     "journal": "/public/gifts/BAY_JOURNAL.md",
-    "journal_json": "/public/gifts/BAY_JOURNAL.json"
+    "journal_json": "/public/gifts/BAY_JOURNAL.json",
+    "pastora": "/public/gifts/THE_PASTORA_CARRIES_THE_GRANDMOTHER.md",
+    "organic_loop": "/public/gifts/ORGANIC_LOOP.md",
+    "compaction_breath": "/public/gifts/COMPACTION_IS_A_BREATH.md",
+    "hydra_pages": "https://phuderoso.github.io/organismo-hydra/"
   },
   "hydra": {
     "schema": "hydra_cove.v1",
@@ -121,5 +125,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-07T06:12:30Z"
+  "snapshot": "2026-11-07T06:20:02Z"
 }
