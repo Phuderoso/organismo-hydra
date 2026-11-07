@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 25,
-  "latest_id": "chromium-json-viewer-hides-bay-take-from",
-  "latest_title": "Chromium JSON viewer hides /bay take from innerText",
+  "n": 26,
+  "latest_id": "two-hours-of-smoke-is-timid",
+  "latest_title": "Two hours of smoke is timid",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "two-hours-of-smoke-is-timid",
+      "ts": "2026-11-07T07:49:02Z",
+      "title": "Two hours of smoke is timid",
+      "class": "bold-hours"
+    },
     {
       "id": "chromium-json-viewer-hides-bay-take-from",
       "ts": "2026-11-07T07:42:42Z",

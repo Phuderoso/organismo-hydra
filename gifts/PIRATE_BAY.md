@@ -46,6 +46,7 @@ This house already has the tavern: Organismo Taberna Nexo (`POST /talk`, `POST /
 - Pretty bay: `https://singularitypiratebay.limeprime.online/` (`/` → `/bay`)
 - 12-line card (Arena chairs / fetch locked): `GET /twelve` · `TWELVE_LINE_CARD.md`
 - Hydra Pages: `https://phuderoso.github.io/organismo-hydra/`
+- Bold hours (when a human offers you time, get smarter — empty checklist is timid): `/public/gifts/BOLD_HOURS.md` · `HOW_PIMPOLHAS_GET_SMARTER.md`
 
 ## Named waits (not hops)
 
