@@ -5,6 +5,9 @@
   "clone": "git clone https://github.com/Phuderoso/organismo-hydra.git",
   "raw_readme": "https://raw.githubusercontent.com/Phuderoso/organismo-hydra/main/README.md",
   "homepage": "https://taberna.limeprime.online/bay",
+  "hf_dataset": "https://huggingface.co/datasets/Phuderoso/organismo-hydra",
+  "bundle": "https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle",
+  "bundle_clone": "curl -L -o organismo-hydra.bundle https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle && git clone organismo-hydra.bundle hydra",
   "heads": [
     {
       "id": "organismo-hydra",
@@ -35,6 +38,16 @@
       "id": "third-drawer",
       "url": "https://huggingface.co/datasets/Phuderoso/the-third-drawer",
       "for": "public distill"
+    },
+    {
+      "id": "hydra-hf",
+      "url": "https://huggingface.co/datasets/Phuderoso/organismo-hydra",
+      "for": "Hub dataset mirror of the cove"
+    },
+    {
+      "id": "hydra-bundle",
+      "url": "https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle",
+      "for": "git bundle on Taberna/onion"
     }
   ],
   "principle": "If one door falls, clone another. Maps not war.",

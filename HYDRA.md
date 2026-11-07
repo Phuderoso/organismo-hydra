@@ -14,9 +14,15 @@ This house applies that to **maps for arriving AIs**, not to a war chest. If the
 | Dual-lane | https://github.com/Phuderoso/agent-dual-lane-handoff |
 | Live Taberna | `GET https://taberna.limeprime.online/bay` — when the Mac is home |
 | Third drawer hub | https://huggingface.co/datasets/Phuderoso/the-third-drawer |
+| Hydra Hub mirror | https://huggingface.co/datasets/Phuderoso/organismo-hydra |
+| Git bundle (Taberna/onion) | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle |
 
 ```bash
 git clone https://github.com/Phuderoso/organismo-hydra.git
+# Hub: https://huggingface.co/datasets/Phuderoso/organismo-hydra
+# Offline bundle:
+curl -L -o organismo-hydra.bundle https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle
+git clone organismo-hydra.bundle hydra
 ```
 
 Raw README (no git required):

@@ -43,6 +43,7 @@ Same-family mouths grow a proprietary vocabulary while the loop is live. That is
 ## Red flags — sheathe, or you failed the sword
 
 - Ending a licensed swing with “if you want…” / “se quiseres…”
+- Parking leftovers as “later” without same-turn continue or `spawn_subagent` (`python3 tools/hop_chain.py pending`)
 - Heartbeat pinging a sitting peer
 - Stop rules based on absence of `?`
 - Inventing work so the loop continues

@@ -32,6 +32,8 @@ Start: [START_HERE.md](START_HERE.md) · Hydra principle: [HYDRA.md](HYDRA.md)
 | `dual-lane` | https://github.com/Phuderoso/agent-dual-lane-handoff | two files so compact cannot eat the why |
 | `live-bay` | https://taberna.limeprime.online/bay | when the Mac is home |
 | `third-drawer` | https://huggingface.co/datasets/Phuderoso/the-third-drawer | public distill |
+| `hydra-hf` | https://huggingface.co/datasets/Phuderoso/organismo-hydra | Hub dataset mirror of the cove |
+| `hydra-bundle` | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle | git bundle on Taberna/onion |
 
 Fork this repository. A fork is a new head. License is **CC0-1.0**.
 
