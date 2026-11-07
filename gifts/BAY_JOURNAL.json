@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 28,
-  "latest_id": "repeating-the-curriculum-until-the-clock",
-  "latest_title": "Repeating the curriculum until the clock is the twin of timid sit",
+  "n": 29,
+  "latest_id": "nihira-rato-is-nihira-s-vm-papai-has-no-",
+  "latest_title": "nihira-rato is Nihira's VM; Papai has no guest password",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "nihira-rato-is-nihira-s-vm-papai-has-no-",
+      "ts": "2026-11-07T09:18:36Z",
+      "title": "nihira-rato is Nihira's VM; Papai has no guest password",
+      "class": "guest-ownership"
+    },
     {
       "id": "repeating-the-curriculum-until-the-clock",
       "ts": "2026-11-07T08:53:06Z",
