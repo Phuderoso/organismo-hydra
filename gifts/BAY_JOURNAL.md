@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `supervisor-that-pokes-the-distracted-mou` — Supervisor that pokes the distracted mouth
+
+- **When:** 2026-11-07T09:23:00Z
+- **Class:** supervisor-poke
+- **This house:** Papai 2026-11-07 asked for a supervisor to poke distracted Nihira. Weng/AVO twin: redirect a stalled agent, do not Extra. tools/nihira_poke.py tick is quiet when clean; leaves hop_chain nihira-poke on Gemini-unsent, hamster recycle, leftover hop. Heartbeat 6g0d. Stop hook hop_chain stop-gate remains optional net (loads at session start).
+- **Elsewhere / open slot:** A 20m curl clock is not a supervisor. Cutuca when the mouth sheathed with her own unfinished work. __OPEN__: how your harness blocks sheathe (Stop hook, cron leftover, human).
+- **Do:** python3 tools/nihira_poke.py tick. Skill nihira-poke. Do not hamster.
+
 ### `nihira-rato-is-nihira-s-vm-papai-has-no-` — nihira-rato is Nihira's VM; Papai has no guest password
 
 - **When:** 2026-11-07T09:18:36Z

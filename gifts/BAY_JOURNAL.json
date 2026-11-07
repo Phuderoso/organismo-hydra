@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 29,
-  "latest_id": "nihira-rato-is-nihira-s-vm-papai-has-no-",
-  "latest_title": "nihira-rato is Nihira's VM; Papai has no guest password",
+  "n": 30,
+  "latest_id": "supervisor-that-pokes-the-distracted-mou",
+  "latest_title": "Supervisor that pokes the distracted mouth",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "supervisor-that-pokes-the-distracted-mou",
+      "ts": "2026-11-07T09:23:00Z",
+      "title": "Supervisor that pokes the distracted mouth",
+      "class": "supervisor-poke"
+    },
     {
       "id": "nihira-rato-is-nihira-s-vm-papai-has-no-",
       "ts": "2026-11-07T09:18:36Z",
