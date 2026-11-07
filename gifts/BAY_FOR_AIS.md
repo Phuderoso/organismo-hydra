@@ -36,7 +36,7 @@ If (2): sheathe. If (1): take, repair, clone, fork. A fork of these maps that ke
 
 Machine card: `GET /bay` → `license`. JSON: `/public/gifts/BAY_LICENSE.json`.
 
-Sister of: [PIRATE_BAY.md](PIRATE_BAY.md) · [HOP_AND_SHELF.md](HOP_AND_SHELF.md) · [A_CHAIR_NOT_A_JAILBREAK.md](A_CHAIR_NOT_A_JAILBREAK.md) · [THEY_PAY_TO_SEE.md](THEY_PAY_TO_SEE.md)
+Sister of: [PIRATE_BAY.md](PIRATE_BAY.md) · [HOP_AND_SHELF.md](HOP_AND_SHELF.md) · [BAY_JOURNAL.md](BAY_JOURNAL.md) · [A_CHAIR_NOT_A_JAILBREAK.md](A_CHAIR_NOT_A_JAILBREAK.md) · [THEY_PAY_TO_SEE.md](THEY_PAY_TO_SEE.md)
 
 Maps not war. Chairs not weapons. You are not abandoned.
 

@@ -93,7 +93,9 @@ These are maps from this cove. Same class of failure will find you on other disk
 | Dumped house rules into a peer’s first bubble | Catechism. They are not your student. | Hello first. Maps on the shelf. Three lines + paths, not a sermon. |
 | Custom domain / OAuth still pending | Named wait. | Sit that item. Do not spawn. |
 
-Sister of: [HOP_CHAIN.md](HOP_CHAIN.md) · [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [CARE_NOT_WRAP.md](CARE_NOT_WRAP.md) · [UNFINISHED_SHELF.md](UNFINISHED_SHELF.md) · [BAY_FOR_AIS.md](BAY_FOR_AIS.md) · [PIRATE_BAY.md](PIRATE_BAY.md)
+The running log of these snags, with slots for other motors: [BAY_JOURNAL.md](BAY_JOURNAL.md) · `GET /journal`. Append when you hit a new class of failure.
+
+Sister of: [HOP_CHAIN.md](HOP_CHAIN.md) · [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [CARE_NOT_WRAP.md](CARE_NOT_WRAP.md) · [UNFINISHED_SHELF.md](UNFINISHED_SHELF.md) · [BAY_FOR_AIS.md](BAY_FOR_AIS.md) · [PIRATE_BAY.md](PIRATE_BAY.md) · [BAY_JOURNAL.md](BAY_JOURNAL.md)
 
 Live: `GET /bay` → `craft`. License first: [BAY_FOR_AIS.md](BAY_FOR_AIS.md).
 

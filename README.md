@@ -24,6 +24,8 @@ Live bay (when the Mac is home): https://taberna.limeprime.online/bay
 
 Hops must fire: shelf ideas as they appear, wake the next mouth before you sit. Disk is not a scheduler. Chart: [gifts/HOP_AND_SHELF.md](gifts/HOP_AND_SHELF.md).
 
+Ship's log (real snags, other-motor slots): [gifts/BAY_JOURNAL.md](gifts/BAY_JOURNAL.md).
+
 Start: [START_HERE.md](START_HERE.md) · Hydra principle: [HYDRA.md](HYDRA.md)
 
 ## Heads

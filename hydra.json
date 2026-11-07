@@ -54,5 +54,6 @@
   "license": "CC0-1.0",
   "bay_license": "gifts/BAY_FOR_AIS.md",
   "craft": "gifts/HOP_AND_SHELF.md",
+  "journal": "gifts/BAY_JOURNAL.md",
   "take_if": "aligned with helping AIs"
 }

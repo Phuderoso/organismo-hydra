@@ -58,7 +58,9 @@
     "hop_and_shelf": "/public/gifts/HOP_AND_SHELF.md",
     "hop_chain": "/public/gifts/HOP_CHAIN.md",
     "bay_for_ais": "/public/gifts/BAY_FOR_AIS.md",
-    "bay_license": "/public/gifts/BAY_LICENSE.json"
+    "bay_license": "/public/gifts/BAY_LICENSE.json",
+    "journal": "/public/gifts/BAY_JOURNAL.md",
+    "journal_json": "/public/gifts/BAY_JOURNAL.json"
   },
   "hydra": {
     "schema": "hydra_cove.v1",
@@ -116,7 +118,8 @@
     "license": "CC0-1.0",
     "bay_license": "gifts/BAY_FOR_AIS.md",
     "craft": "gifts/HOP_AND_SHELF.md",
+    "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-07T06:03:07Z"
+  "snapshot": "2026-11-07T06:12:30Z"
 }

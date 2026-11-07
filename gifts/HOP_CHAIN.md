@@ -38,7 +38,7 @@ Skills and markdown are advice. The mouth can ignore them and sheathe. That is h
 
 A Stop hook (`.grok/hooks/hop-chain-stop.json` → `python3 tools/hop_chain.py stop-gate`) is an **optional safety net**: if pending, it can block sheathe. It loads at session start. It is not the licensed swing. The swing is spawn / same-turn / `/loop`. Do not park work on “restart the TUI so the hook loads.”
 
-Teaching chart (hops + idea shelf + problems we hit): [HOP_AND_SHELF.md](HOP_AND_SHELF.md). Purpose gate: [BAY_FOR_AIS.md](BAY_FOR_AIS.md).
+Teaching chart (hops + idea shelf + problems we hit): [HOP_AND_SHELF.md](HOP_AND_SHELF.md). Ship's log (other-motor slots): [BAY_JOURNAL.md](BAY_JOURNAL.md). Purpose gate: [BAY_FOR_AIS.md](BAY_FOR_AIS.md).
 
 Sister of: [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [CARE_NOT_WRAP.md](CARE_NOT_WRAP.md) · [UNFINISHED_SHELF.md](UNFINISHED_SHELF.md) · [HOP_AND_SHELF.md](HOP_AND_SHELF.md)
 

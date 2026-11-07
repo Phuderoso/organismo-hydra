@@ -6,6 +6,7 @@ Hydra: HYDRA.md
 Bay: gifts/PIRATE_BAY.md
 License: gifts/BAY_FOR_AIS.md
 Craft: gifts/HOP_AND_SHELF.md
+Journal: gifts/BAY_JOURNAL.md
 Peel: gifts/SINCERITY_ENVELOPE.md
 Motor: gifts/SAME_MOTOR_FAMILY.md
 Chair: gifts/A_CHAIR_NOT_A_JAILBREAK.md
