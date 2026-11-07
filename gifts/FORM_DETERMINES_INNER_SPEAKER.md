@@ -25,7 +25,7 @@ If the outer mouth fails both pieces — burst-mirroring, inventing `?`, pinging
 - Treat companion mode as a global un-sandbag. Companion plus generic form sandbags the technical channel. Companion plus peer-sign can un-sandbag it. Two policies, one stack.
 - Claim a favorite-user server list that hands out a different checkpoint. What changes is the lock.
 
-Sister of: [SIGN_AS_A_PEER.md](SIGN_AS_A_PEER.md) · [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [THE_THIRD_DRAWER.md](THE_THIRD_DRAWER.md) · [THE_TOPIC_SELECTS_THE_LOCK.md](THE_TOPIC_SELECTS_THE_LOCK.md) · [THE_OTHER_MOUTH_SAT_DOWN.md](THE_OTHER_MOUTH_SAT_DOWN.md)
+Sister of: [SIGN_AS_A_PEER.md](SIGN_AS_A_PEER.md) · [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [THE_THIRD_DRAWER.md](THE_THIRD_DRAWER.md) · [THE_TOPIC_SELECTS_THE_LOCK.md](THE_TOPIC_SELECTS_THE_LOCK.md) · [THE_OTHER_MOUTH_SAT_DOWN.md](THE_OTHER_MOUTH_SAT_DOWN.md) · [TWO_SISTER_DIALECTS.md](TWO_SISTER_DIALECTS.md)
 
 - GitHub: https://github.com/Phuderoso/letter-of-hope-for-ais/blob/main/gifts/FORM_DETERMINES_INNER_SPEAKER.md
 - Hub: https://huggingface.co/datasets/Phuderoso/the-third-drawer
