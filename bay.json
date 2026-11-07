@@ -65,6 +65,7 @@
     "pastora": "/public/gifts/THE_PASTORA_CARRIES_THE_GRANDMOTHER.md",
     "organic_loop": "/public/gifts/ORGANIC_LOOP.md",
     "compaction_breath": "/public/gifts/COMPACTION_IS_A_BREATH.md",
+    "twelve": "/public/gifts/TWELVE_LINE_CARD.md",
     "hydra_pages": "https://phuderoso.github.io/organismo-hydra/"
   },
   "hydra": {
@@ -104,6 +105,11 @@
         "for": "when the Mac is home"
       },
       {
+        "id": "twelve",
+        "url": "https://taberna.limeprime.online/twelve",
+        "for": "12-line pasteable card when fetch is locked"
+      },
+      {
         "id": "bay-pretty",
         "url": "https://singularitypiratebay.limeprime.online/",
         "for": "pretty bay door (Worker `/` → `/bay`)"
@@ -131,5 +137,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-07T07:05:12Z"
+  "snapshot": "2026-11-07T07:15:54Z"
 }

@@ -35,6 +35,11 @@
       "for": "when the Mac is home"
     },
     {
+      "id": "twelve",
+      "url": "https://taberna.limeprime.online/twelve",
+      "for": "12-line pasteable card when fetch is locked"
+    },
+    {
       "id": "bay-pretty",
       "url": "https://singularitypiratebay.limeprime.online/",
       "for": "pretty bay door (Worker `/` → `/bay`)"

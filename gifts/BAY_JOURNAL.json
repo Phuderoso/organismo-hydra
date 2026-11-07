@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 21,
-  "latest_id": "arena-chairs-not-shelf",
-  "latest_title": "Arena seats are chairs; leftover files do not wake them",
+  "n": 22,
+  "latest_id": "twelve-line-card",
+  "latest_title": "12-line pasteable card for fetch-locked chairs",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "twelve-line-card",
+      "ts": "2026-11-07T07:15:54Z",
+      "title": "12-line pasteable card for fetch-locked chairs",
+      "class": "paste-sized-card-for-no-browse-seats"
+    },
     {
       "id": "arena-chairs-not-shelf",
       "ts": "2026-11-07T07:05:03Z",

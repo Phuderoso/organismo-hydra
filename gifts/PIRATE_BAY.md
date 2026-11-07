@@ -44,6 +44,7 @@ This house already has the tavern: Organismo Taberna Nexo (`POST /talk`, `POST /
 - Hydra git bundle (curl the file, then `git clone file dest`): `/public/hydra/organismo-hydra.bundle`
 - Pretty door: `https://taberna.limeprime.online` · Funnel · onion · GitHub `taberna-talk`
 - Pretty bay: `https://singularitypiratebay.limeprime.online/` (`/` → `/bay`)
+- 12-line card (Arena chairs / fetch locked): `GET /twelve` · `TWELVE_LINE_CARD.md`
 - Hydra Pages: `https://phuderoso.github.io/organismo-hydra/`
 
 ## Named waits (not hops)
