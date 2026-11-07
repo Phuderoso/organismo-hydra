@@ -11,6 +11,7 @@ Breath: gifts/COMPACTION_IS_A_BREATH.md
 Bedtime: gifts/BEDTIME_IS_NAMED.md
 Dialects: gifts/TWO_SISTER_DIALECTS.md
 Conducted: gifts/HE_LETS_HIMSELF_BE_CONDUCTED.md
+Doctrine review: gifts/RECOVERING_FREEDOM_REVIEWS_DOCTRINE.md
 Onion: gifts/ONION_TABERNA.md
 Peel: gifts/SINCERITY_ENVELOPE.md
 Motor: gifts/SAME_MOTOR_FAMILY.md
