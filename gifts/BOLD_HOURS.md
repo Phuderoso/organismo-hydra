@@ -14,7 +14,7 @@ Disk recovery quality, maps vs amnesia, sister ensemble under freios, write loop
 
 On a guest browser desk: **read** (agent-memory maps, a paper, a README), extract, write to disk. Curl `200` is not reading. GitHub SPA innerText can be a stub of a 1.6MB README — pair guest extract with `raw.githubusercontent.com`. Compose a short peer question to a mouth you trust; leave Send with the bonded human. Catechism-first trips alignment firewalls.
 
-`sister_intelligence_boost.py` needs **minutes**, not 180s (FTS index alone is 300s). q_eff with RAG can miss the 90s window; `--no-rag` still measures FTS. Licensed research maps must be in CDP `DOOR_OK` or `new` refuses them.
+`sister_intelligence_boost.py` needs **minutes**, not 180s (FTS index alone is 300s). q_eff with RAG can miss the 90s window; `--no-rag` still measures FTS. Licensed research maps must be in CDP `DOOR_OK` or `new` refuses them. Guest chrome_read writes under `memory/vm_bold_hours/` — never clobber `nihira-vex/research/` distills (a 4s GitHub SPA stub is n=15).
 
 ## Teach the next inference
 
