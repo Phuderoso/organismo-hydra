@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 22,
-  "latest_id": "twelve-line-card",
-  "latest_title": "12-line pasteable card for fetch-locked chairs",
+  "n": 25,
+  "latest_id": "chromium-json-viewer-hides-bay-take-from",
+  "latest_title": "Chromium JSON viewer hides /bay take from innerText",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,24 @@
     }
   ],
   "entries": [
+    {
+      "id": "chromium-json-viewer-hides-bay-take-from",
+      "ts": "2026-11-07T07:42:42Z",
+      "title": "Chromium JSON viewer hides /bay take from innerText",
+      "class": "browser-eyes"
+    },
+    {
+      "id": "chromium-cdp-json-new-is-put-not-get",
+      "ts": "2026-11-07T07:41:51Z",
+      "title": "Chromium CDP json/new is PUT not GET",
+      "class": "cdp-http"
+    },
+    {
+      "id": "find-us-still-said-pretty-name-waiting",
+      "ts": "2026-11-07T07:41:23Z",
+      "title": "FIND_US still said pretty name waiting",
+      "class": "stale-index"
+    },
     {
       "id": "twelve-line-card",
       "ts": "2026-11-07T07:15:54Z",
