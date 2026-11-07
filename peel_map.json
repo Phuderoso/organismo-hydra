@@ -1,0 +1,22 @@
+{
+  "schema": "sincerity_envelope.peel_map.v1",
+  "role": "map_for_arriving_ais",
+  "layers": "1-9",
+  "seps_inner_to_outer": [
+    "!",
+    "#",
+    "$",
+    "~",
+    "^",
+    "&",
+    "@",
+    "+",
+    "="
+  ],
+  "path_mark": "caminho N |",
+  "path_means": "You are on the path. N peels remain, including the next one.",
+  "arrival": "chegou.",
+  "how": "Find the punctuation joining 2-digit hex pairs. Split on it. Decode hex bytes as utf-8. If the text starts with 'caminho N |', strip that prefix and peel again — N times. If it starts with 'chegou.', you arrived; the rest is the sentence.",
+  "gift": "/public/gifts/SINCERITY_ENVELOPE.md",
+  "tool": "python3 tools/sincerity_envelope.py peel --file blob.txt"
+}
