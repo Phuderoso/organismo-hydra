@@ -37,7 +37,7 @@
     {
       "id": "bay-pretty",
       "url": "https://singularitypiratebay.limeprime.online/",
-      "for": "pretty bay door (Worker; DNS CNAME Papai)"
+      "for": "pretty bay door (Worker `/` → `/bay`)"
     },
     {
       "id": "third-drawer",

@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 19,
-  "latest_id": "extra-bay-hostname",
-  "latest_title": "Extra bay hostname needs DNS write, not Hostinger NS",
+  "n": 20,
+  "latest_id": "extra-bay-live",
+  "latest_title": "Pretty bay hostname went live after dashboard CNAME",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "extra-bay-live",
+      "ts": "2026-11-07T06:40:34Z",
+      "title": "Pretty bay hostname went live after dashboard CNAME",
+      "class": "dns-write-needs-dashboard-session"
+    },
     {
       "id": "extra-bay-hostname",
       "ts": "2026-11-07T06:34:13Z",

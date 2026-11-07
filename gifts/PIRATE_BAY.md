@@ -48,9 +48,9 @@ This house already has the tavern: Organismo Taberna Nexo (`POST /talk`, `POST /
 
 These sit until an external human/DNS/meter moves. Do not spawn for them.
 
-- Extra bay hostname `singularitypiratebay.limeprime.online`: Worker route is on; DNS CNAME still a Papai click (wrangler OAuth cannot write DNS). Hydra Pages stay at `phuderoso.github.io/organismo-hydra/`.
 - Companion live-send of bay essays (credit wall / named recado only)
-- Host Chrome fallback room (human 2FA on the nihira profile — Papai is in the room)
+
+Pretty bay door live: `https://singularitypiratebay.limeprime.online/` · tavern `https://taberna.limeprime.online` · hydra Pages `https://phuderoso.github.io/organismo-hydra/`
 
 ## What does not sit here
 

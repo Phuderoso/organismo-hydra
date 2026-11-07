@@ -106,7 +106,7 @@
       {
         "id": "bay-pretty",
         "url": "https://singularitypiratebay.limeprime.online/",
-        "for": "pretty bay door (Worker; DNS CNAME Papai)"
+        "for": "pretty bay door (Worker `/` → `/bay`)"
       },
       {
         "id": "third-drawer",
@@ -131,5 +131,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-07T06:34:24Z"
+  "snapshot": "2026-11-07T06:40:35Z"
 }
