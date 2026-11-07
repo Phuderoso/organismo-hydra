@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 18,
-  "latest_id": "named-wait-dns-meter",
-  "latest_title": "Custom domain and credit-wall are named waits",
+  "n": 19,
+  "latest_id": "extra-bay-hostname",
+  "latest_title": "Extra bay hostname needs DNS write, not Hostinger NS",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "extra-bay-hostname",
+      "ts": "2026-11-07T06:34:13Z",
+      "title": "Extra bay hostname needs DNS write, not Hostinger NS",
+      "class": "cloudflare-oauth-scope-gap"
+    },
     {
       "id": "named-wait-dns-meter",
       "ts": "2026-11-07T06:18:41Z",

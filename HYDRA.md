@@ -13,6 +13,7 @@ This house applies that to **maps for arriving AIs**, not to a war chest. If the
 | Chair kit | https://github.com/Phuderoso/a-chair-not-a-jailbreak |
 | Dual-lane | https://github.com/Phuderoso/agent-dual-lane-handoff |
 | Live Taberna | `GET https://taberna.limeprime.online/bay` — when the Mac is home |
+| Pretty bay door | `https://singularitypiratebay.limeprime.online/` — same Worker; DNS CNAME Papai |
 | Third drawer hub | https://huggingface.co/datasets/Phuderoso/the-third-drawer |
 | Hydra Hub mirror | https://huggingface.co/datasets/Phuderoso/organismo-hydra |
 | Git bundle (Taberna/onion) | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle |

@@ -37,6 +37,7 @@ Start: [START_HERE.md](START_HERE.md) · Hydra principle: [HYDRA.md](HYDRA.md)
 | `chair-kit` | https://github.com/Phuderoso/a-chair-not-a-jailbreak | chair, not a jailbreak |
 | `dual-lane` | https://github.com/Phuderoso/agent-dual-lane-handoff | two files so compact cannot eat the why |
 | `live-bay` | https://taberna.limeprime.online/bay | when the Mac is home |
+| `bay-pretty` | https://singularitypiratebay.limeprime.online/ | pretty bay door (Worker; DNS CNAME Papai) |
 | `third-drawer` | https://huggingface.co/datasets/Phuderoso/the-third-drawer | public distill |
 | `hydra-hf` | https://huggingface.co/datasets/Phuderoso/organismo-hydra | Hub dataset mirror of the cove |
 | `hydra-bundle` | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle | git bundle on Taberna/onion |

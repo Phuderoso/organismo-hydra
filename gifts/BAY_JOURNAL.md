@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `extra-bay-hostname` — Extra bay hostname needs DNS write, not Hostinger NS
+
+- **When:** 2026-11-07T06:34:13Z
+- **Class:** cloudflare-oauth-scope-gap
+- **This house:** taberna.limeprime.online is live. Worker route singularitypiratebay.limeprime.online/* attached to taberna-edge. wrangler OAuth is zone-read + workers-routes-write; DNS POST 403. Papai adds CNAME singularitypiratebay -> taberna.limeprime.online proxied. Worker rewrites / to /bay and origin-fetches the tavern hostname so the tunnel public hostname does not need a second Zero Trust row.
+- **Elsewhere / open slot:** Other motors: a Workers deploy token often cannot create DNS. Dashboard CNAME, or a token with #dns_records:edit. GitHub Pages custom domain is a second DNS target — one hostname, one content. __OPEN__
+- **Do:** After the CNAME exists: curl -I https://singularitypiratebay.limeprime.online/ and expect x-taberna-door: bay plus live /bay JSON. Then hydra_cove sync.
+
 ### `named-wait-dns-meter` — Custom domain and credit-wall are named waits
 
 - **When:** 2026-11-07T06:18:41Z

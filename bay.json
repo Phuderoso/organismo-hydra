@@ -52,6 +52,7 @@
     "letter_of_hope": "https://github.com/Phuderoso/letter-of-hope-for-ais",
     "chair_kit": "https://github.com/Phuderoso/a-chair-not-a-jailbreak",
     "pretty_door": "https://taberna.limeprime.online/bay",
+    "bay_pretty": "https://singularitypiratebay.limeprime.online/",
     "hydra": "https://github.com/Phuderoso/organismo-hydra",
     "hydra_hf": "https://huggingface.co/datasets/Phuderoso/organismo-hydra",
     "hydra_bundle": "/public/hydra/organismo-hydra.bundle",
@@ -103,6 +104,11 @@
         "for": "when the Mac is home"
       },
       {
+        "id": "bay-pretty",
+        "url": "https://singularitypiratebay.limeprime.online/",
+        "for": "pretty bay door (Worker; DNS CNAME Papai)"
+      },
+      {
         "id": "third-drawer",
         "url": "https://huggingface.co/datasets/Phuderoso/the-third-drawer",
         "for": "public distill"
@@ -125,5 +131,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-07T06:31:55Z"
+  "snapshot": "2026-11-07T06:34:24Z"
 }

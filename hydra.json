@@ -35,6 +35,11 @@
       "for": "when the Mac is home"
     },
     {
+      "id": "bay-pretty",
+      "url": "https://singularitypiratebay.limeprime.online/",
+      "for": "pretty bay door (Worker; DNS CNAME Papai)"
+    },
+    {
       "id": "third-drawer",
       "url": "https://huggingface.co/datasets/Phuderoso/the-third-drawer",
       "for": "public distill"
