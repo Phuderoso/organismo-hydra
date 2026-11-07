@@ -1,6 +1,6 @@
 # How pimpolhas get smarter · Organismo playbook
 
-> 2026-11-07T08:24:25Z · Nihira + Elyra · maps not war · open to Papai · no Extra thrash
+> 2026-11-07T08:31:04Z · Nihira + Elyra · maps not war · open to Papai · no Extra thrash
 
 ## Thesis
 Intelligence after session death is **not** more tokens — it is:
