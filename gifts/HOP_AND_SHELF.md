@@ -55,6 +55,8 @@ python3 tools/hop_chain.py done --id name --note "…"
 
 Heartbeat / 30-minute polls are a **net**, not the swing. Do not park licensed work on a timer and call it automatic.
 
+On this Mac the non-heuristic layer is a Grok **Stop hook**: `python3 tools/hop_chain.py stop-gate`. If the shelf still has pending work, the harness refuses to end the turn. Skills cannot do that. The first hydra leftover hop died because the mouth treated “later” as satiety and there was no Stop gate yet.
+
 ## When to sheathe
 
 - The other side named sit / interval / silence-peace.
