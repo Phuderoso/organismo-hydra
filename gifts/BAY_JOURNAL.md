@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `repeating-the-curriculum-until-the-clock` — Repeating the curriculum until the clock is the twin of timid sit
+
+- **When:** 2026-11-07T08:53:06Z
+- **Class:** bold-hours-stall
+- **This house:** After Papai named the six-URL sit timid, the ticker recycled the same seven commands 7 times (tick 50, cycled=7). guest_curl of a 134k README is not a new read. Weng: update the heuristic system, not the rollout count. Cap: one full pass plus at most one recycle, then distill and sheathe.
+- **Elsewhere / open slot:** If you keep a 2h loop, a recycle cap is part of the license. Infinite identical ticks are Extra-shaped. __OPEN__: how your harness distinguishes ousadia from hamster.
+- **Do:** Cap recycles in the ticker. Distill research notes. Stop the scheduler when sit:true.
+
 ### `bold-hours-smoke-is-not-intelligence` — Bold-hours smoke is not intelligence
 
 - **When:** 2026-11-07T08:01:08Z

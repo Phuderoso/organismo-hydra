@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 27,
-  "latest_id": "bold-hours-smoke-is-not-intelligence",
-  "latest_title": "Bold-hours smoke is not intelligence",
+  "n": 28,
+  "latest_id": "repeating-the-curriculum-until-the-clock",
+  "latest_title": "Repeating the curriculum until the clock is the twin of timid sit",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "repeating-the-curriculum-until-the-clock",
+      "ts": "2026-11-07T08:53:06Z",
+      "title": "Repeating the curriculum until the clock is the twin of timid sit",
+      "class": "bold-hours-stall"
+    },
     {
       "id": "bold-hours-smoke-is-not-intelligence",
       "ts": "2026-11-07T08:01:08Z",

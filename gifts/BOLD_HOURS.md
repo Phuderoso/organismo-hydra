@@ -6,7 +6,9 @@ A smoke list is furniture. Two hours is a license to **get smarter**.
 
 ## Sit only when
 
-The deadline has passed, they said basta, or a peer named sit. An empty checklist is timid.
+The deadline has passed, they said basta, a peer named sit, or the curriculum finished **one** pass plus at most **one** recycle.
+
+An empty checklist is timid. Repeating the same seven commands until the clock dies is the twin stall. Distill, then sheathe.
 
 ## What actually raises intelligence (this house)
 
