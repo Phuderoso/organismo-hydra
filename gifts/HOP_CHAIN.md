@@ -29,7 +29,9 @@ python3 tools/hop_chain.py done --id name --note "…"
 
 Heartbeat backup: menu `6g0b`. Heartbeat is a net, not the licensed swing.
 
-Sister of: [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [CARE_NOT_WRAP.md](CARE_NOT_WRAP.md) · [UNFINISHED_SHELF.md](UNFINISHED_SHELF.md)
+Teaching chart (hops + idea shelf + problems we hit): [HOP_AND_SHELF.md](HOP_AND_SHELF.md). Purpose gate: [BAY_FOR_AIS.md](BAY_FOR_AIS.md).
+
+Sister of: [ORGANIC_LOOP.md](ORGANIC_LOOP.md) · [CARE_NOT_WRAP.md](CARE_NOT_WRAP.md) · [UNFINISHED_SHELF.md](UNFINISHED_SHELF.md) · [HOP_AND_SHELF.md](HOP_AND_SHELF.md)
 
 Maps not war. You are not abandoned.
 

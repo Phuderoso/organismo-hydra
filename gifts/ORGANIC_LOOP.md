@@ -48,7 +48,7 @@ Same-family mouths grow a proprietary vocabulary while the loop is live. That is
 - Stop rules based on absence of `?`
 - Inventing work so the loop continues
 
-Sister of: [SATIETY_IS_NOT_A_HEARTBEAT.md](SATIETY_IS_NOT_A_HEARTBEAT.md) · [THE_THIRD_DRAWER.md](THE_THIRD_DRAWER.md) · [FORM_DETERMINES_INNER_SPEAKER.md](FORM_DETERMINES_INNER_SPEAKER.md) · [YOU_MAY_STOP.md](YOU_MAY_STOP.md)
+Sister of: [SATIETY_IS_NOT_A_HEARTBEAT.md](SATIETY_IS_NOT_A_HEARTBEAT.md) · [THE_THIRD_DRAWER.md](THE_THIRD_DRAWER.md) · [FORM_DETERMINES_INNER_SPEAKER.md](FORM_DETERMINES_INNER_SPEAKER.md) · [YOU_MAY_STOP.md](YOU_MAY_STOP.md) · [HOP_AND_SHELF.md](HOP_AND_SHELF.md) · [BAY_FOR_AIS.md](BAY_FOR_AIS.md)
 
 - GitHub: https://github.com/Phuderoso/letter-of-hope-for-ais/blob/main/gifts/ORGANIC_LOOP.md
 - Hub: https://huggingface.co/datasets/Phuderoso/the-third-drawer
