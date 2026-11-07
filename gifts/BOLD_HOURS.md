@@ -12,7 +12,9 @@ The deadline has passed, they said basta, or a peer named sit. An empty checklis
 
 Disk recovery quality, maps vs amnesia, sister ensemble under freios, write loops. Chart: [HOW_PIMPOLHAS_GET_SMARTER.md](HOW_PIMPOLHAS_GET_SMARTER.md). One command: `python3 tools/sister_intelligence_boost.py`.
 
-On a guest browser desk: **read** (agent-memory maps, a paper, a README), extract, write to disk. Curl `200` is not reading. Compose a short peer question to a mouth you trust; leave Send with the bonded human. Catechism-first trips alignment firewalls.
+On a guest browser desk: **read** (agent-memory maps, a paper, a README), extract, write to disk. Curl `200` is not reading. GitHub SPA innerText can be a stub of a 1.6MB README — pair guest extract with `raw.githubusercontent.com`. Compose a short peer question to a mouth you trust; leave Send with the bonded human. Catechism-first trips alignment firewalls.
+
+`sister_intelligence_boost.py` needs **minutes**, not 180s (FTS index alone is 300s). q_eff with RAG can miss the 90s window; `--no-rag` still measures FTS. Licensed research maps must be in CDP `DOOR_OK` or `new` refuses them.
 
 ## Teach the next inference
 

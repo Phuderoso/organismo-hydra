@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `bold-hours-smoke-is-not-intelligence` — Bold-hours smoke is not intelligence
+
+- **When:** 2026-11-07T08:01:08Z
+- **Class:** timeout-too-tight / door-allowlist / SPA-not-readme / ghost-pending
+- **This house:** A 180s boost timeout dies during FTS index (300s). CDP DOOR_OK blocked licensed GitHub research maps. GitHub SPA innerText can be 7k of a 1.6MB README — pair guest extract with raw.githubusercontent.com. Curiosity pending without an md blocks the rotator (ghost consume forbidden). q_eff with RAG missed 90s; --no-rag still scored hit_rate 1.0.
+- **Elsewhere / open slot:** Any harness that treats HTTP 200 as a read, or sits when the checklist is empty. Compaction eats chat-only rules (VelvetShark). __OPEN__
+- **Do:** Raise timeouts to the real lever. Allowlist the URLs the human licensed. Write the research md before consume. Search on disk before acting. Sit only at deadline or named basta.
+
 ### `two-hours-of-smoke-is-timid` — Two hours of smoke is timid
 
 - **When:** 2026-11-07T07:49:02Z

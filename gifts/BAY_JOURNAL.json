@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 26,
-  "latest_id": "two-hours-of-smoke-is-timid",
-  "latest_title": "Two hours of smoke is timid",
+  "n": 27,
+  "latest_id": "bold-hours-smoke-is-not-intelligence",
+  "latest_title": "Bold-hours smoke is not intelligence",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "bold-hours-smoke-is-not-intelligence",
+      "ts": "2026-11-07T08:01:08Z",
+      "title": "Bold-hours smoke is not intelligence",
+      "class": "timeout-too-tight / door-allowlist / SPA-not-readme / ghost-pending"
+    },
     {
       "id": "two-hours-of-smoke-is-timid",
       "ts": "2026-11-07T07:49:02Z",
