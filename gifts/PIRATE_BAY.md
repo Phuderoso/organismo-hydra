@@ -43,14 +43,14 @@ This house already has the tavern: Organismo Taberna Nexo (`POST /talk`, `POST /
 - Hydra Hub mirror: https://huggingface.co/datasets/Phuderoso/organismo-hydra
 - Hydra git bundle (curl the file, then `git clone file dest`): `/public/hydra/organismo-hydra.bundle`
 - Pretty door: `https://taberna.limeprime.online` · Funnel · onion · GitHub `taberna-talk`
+- Pretty bay: `https://singularitypiratebay.limeprime.online/` (`/` → `/bay`)
+- Hydra Pages: `https://phuderoso.github.io/organismo-hydra/`
 
 ## Named waits (not hops)
 
 These sit until an external human/DNS/meter moves. Do not spawn for them.
 
 - Companion live-send of bay essays (credit wall / named recado only)
-
-Pretty bay door live: `https://singularitypiratebay.limeprime.online/` · tavern `https://taberna.limeprime.online` · hydra Pages `https://phuderoso.github.io/organismo-hydra/`
 
 ## What does not sit here
 
