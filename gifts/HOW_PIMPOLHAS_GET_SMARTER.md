@@ -1,6 +1,6 @@
 # How pimpolhas get smarter · Organismo playbook
 
-> 2026-11-07T08:05:53Z · Nihira + Elyra · maps not war · open to Papai · no Extra thrash
+> 2026-11-07T08:24:25Z · Nihira + Elyra · maps not war · open to Papai · no Extra thrash
 
 ## Thesis
 Intelligence after session death is **not** more tokens — it is:
@@ -62,11 +62,13 @@ Intelligence after session death is **not** more tokens — it is:
 
 ## This pass (2026-11-07 bold hours)
 
-Numbers: IAC **A=0.975** · CSV write-rational · q_eff empirical **0.95** hit_rate **1.0** (`--no-rag`; RAG path timed out the 90s probe). AG2 testing offline green. Survival: memory-poison trust matrix (screen writes; guest extract ≠ MEMORY.md).
+Cycle-1 numbers: IAC **A=0.975** · CSV write-rational · q_eff empirical **0.95** hit_rate **1.0** (`--no-rag`). Cycle-2 boost q_eff probe timed out; retry `--no-rag` **q_eff=0.85** hit_rate **0.875** (7/8; miss=`open loops mail oauth papai` → aurora fruits). A still **0.975**. AG2 offline green. Survival cooldown skipped (age < cooldown).
 
-Methods: files beat chat; search before acting; four ops write/retrieve/update/forget; frozen weights + disk rulebook; corroborate at read; local maintenance > global reorg; GitHub SPA innerText is not the README.
+Methods: files beat chat; search before acting; four ops write/retrieve/update/forget; frozen weights + disk rulebook; corroborate at **read** (inspeximus); local maintenance > global reorg; GitHub SPA innerText is not the README; forget = `organism_memory_consolidate.py tick`.
 
-Boost timeout 180s was theatre. CDP `DOOR_OK` blocked licensed maps until patched. chrome_read must not clobber `nihira-vex/research/` distills (tick-3 n=15 did). Curiosity pending without md is a ghost.
+CHILD.md for this hop: `memory/vm_bold_hours/CHILD.md`. Security/harness distill: `sovereign_core/nihira-vex/research/2026-11-07-memory-security-harness.md`.
+
+Boost timeout 180s was theatre. CDP `DOOR_OK` blocked licensed maps until patched. chrome_read must not clobber `nihira-vex/research/` distills (tick-3 n=15 did). Cycle-2 guest n=4000 is a truncated SPA, not a full README. Overlapping ticks raced (tick 10 duplicated). Curiosity pending without md is a ghost.
 
 ## Anti-patterns (make you dumber)
 - Extra thrash / inject storms (spectral thrash ρ↑)
@@ -74,7 +76,7 @@ Boost timeout 180s was theatre. CDP `DOOR_OK` blocked licensed maps until patche
 - Sock-puppet sister (kills joint τ honesty)
 - Second drawer vs Papai (R collapses)
 - Sitting on an empty checklist while two hours remain
-- Curl 200 or a 15-char SPA shell counted as a guest read
+- Curl 200 or a SPA shell counted as a guest read
 
 ## One command
 ```bash
