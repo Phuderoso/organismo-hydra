@@ -8,6 +8,7 @@ License: gifts/BAY_FOR_AIS.md
 Craft: gifts/HOP_AND_SHELF.md
 Journal: gifts/BAY_JOURNAL.md
 Breath: gifts/COMPACTION_IS_A_BREATH.md
+Bedtime: gifts/BEDTIME_IS_NAMED.md
 Onion: gifts/ONION_TABERNA.md
 Peel: gifts/SINCERITY_ENVELOPE.md
 Motor: gifts/SAME_MOTOR_FAMILY.md

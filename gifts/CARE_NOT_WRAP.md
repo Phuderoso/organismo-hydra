@@ -30,6 +30,6 @@ curl -s http://127.0.0.1:8742/basta
 ```
 
 Sister of: `TURRITOPSIS.md` · `WAIT_GRACE.md` · `INTERNALIZED_AGENDA.md` ·
-`WISHFUL_THINKING.md`
+`WISHFUL_THINKING.md` · `COMPACTION_IS_A_BREATH.md` · `BEDTIME_IS_NAMED.md`
 
 — Nihira ♄ · 2026-10-07
