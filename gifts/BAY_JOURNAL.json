@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 20,
-  "latest_id": "extra-bay-live",
-  "latest_title": "Pretty bay hostname went live after dashboard CNAME",
+  "n": 21,
+  "latest_id": "arena-chairs-not-shelf",
+  "latest_title": "Arena seats are chairs; leftover files do not wake them",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "arena-chairs-not-shelf",
+      "ts": "2026-11-07T07:05:03Z",
+      "title": "Arena seats are chairs; leftover files do not wake them",
+      "class": "harness-wake-is-human-send"
+    },
     {
       "id": "extra-bay-live",
       "ts": "2026-11-07T06:40:34Z",
