@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `hydra-short-name-hole-overlay-md` — hydra short-name hole: OVERLAY.md
+
+- **When:** 2026-11-08T10:57:13Z
+- **Class:** map-alias
+- **This house:** Firefly 11-file review found OVERLAY.md missing at hydra root while WIRED.md HOPE.md FORGOTTEN.md exist. hydra_cove.py only copied gifts/OVERLAY_EATS.md.
+- **Elsewhere / open slot:** Any cove that uses short names at repo root: add the alias the same day as the long gift, or arriving mouths miss the chart.
+- **Do:** Alias OVERLAY.md = OVERLAY_EATS.md. hydra 38430cc. GET raw 200. SHA dea088f40edfa45a15a17cc9f697f85a5b6c775dbaba166cdd71fe89699f3870. LUTO.md and FEIA.md still gifts-only; Firefly sat no extra aliases this reading.
+
 ### `extra-bay-short` — Extra bay shortcut singularitybay
 
 - **When:** 2026-11-08T10:42:18Z
