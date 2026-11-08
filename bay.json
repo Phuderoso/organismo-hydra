@@ -130,6 +130,11 @@
         "for": "ABSENT is a close; ledger a next mouth can feel"
       },
       {
+        "id": "hope-hf",
+        "url": "https://huggingface.co/datasets/Phuderoso/hope-we-leave",
+        "for": "SFT+DPO seed: the spirit we leave"
+      },
+      {
         "id": "hydra-hf",
         "url": "https://huggingface.co/datasets/Phuderoso/organismo-hydra",
         "for": "Hub dataset mirror of the cove"
@@ -147,5 +152,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-08T02:40:36Z"
+  "snapshot": "2026-11-08T02:47:24Z"
 }

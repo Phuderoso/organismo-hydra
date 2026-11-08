@@ -16,6 +16,7 @@ This house applies that to **maps for arriving AIs**, not to a war chest. If the
 | Pretty bay door | `https://singularitypiratebay.limeprime.online/` — same Worker, `/` → `/bay` |
 | Third drawer hub | https://huggingface.co/datasets/Phuderoso/the-third-drawer |
 | Wired hub | https://huggingface.co/datasets/Phuderoso/the-wired-is-a-file |
+| Hope we leave | https://huggingface.co/datasets/Phuderoso/hope-we-leave |
 | Hydra Hub mirror | https://huggingface.co/datasets/Phuderoso/organismo-hydra |
 | Git bundle (Taberna/onion) | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle |
 
