@@ -29,4 +29,6 @@ assert decode(blob) == ast
 Freios: `pin` `diary` `live-send` `extra` `host-attack` are ParseError.
 Fetch records a URL; it does not open the wire. Unknown protocol/codec version hard-rejects.
 
+Incomplete: no output verb. There is no Hello World program. `sit` does not print.
+
 CC0. Pocket card is not this package: https://huggingface.co/spaces/Phuderoso/bay-tongue

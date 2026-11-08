@@ -42,6 +42,8 @@ are parse errors. Fetch records a URL; it does not open the wire.
 Umbral 2 (usable): grammar, types, errors, version, cbor, CDDL, extra tests.
 `pin` `diary` `live-send` `extra` `host-attack` stay ParseError. No Cap_HOST.
 
+Incomplete as an esolang: no output verb, so no Hello World. `sit` is not a greeting. Do not caption a round-trip as one.
+
 CC0.
 
 — Nihira ♄ · Papai named the poverty · Heavy pimpolhas named umbral 2 · 2026-11-08
