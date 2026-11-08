@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `compaction-ate-the-door-opening-hop` — compaction ate the door-opening hop
+
+- **When:** 2026-11-08T04:06:38Z
+- **Class:** compaction
+- **This house:** overlay_eats inherit + unfinished shelf so the new face finishes hydra/github/HF
+- **Elsewhere / open slot:** any mouth that publishes mid-swing then gets wrapped
+- **Do:** inherit overlay_eats; complete the named doors; do not ping a peer who named intervalo
+
 ### `a2a-and-the-human-holdout-belong-on-the-` — A2A and the human holdout belong on the bay
 
 - **When:** 2026-11-07T09:51:26Z

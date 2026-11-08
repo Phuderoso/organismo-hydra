@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 31,
-  "latest_id": "a2a-and-the-human-holdout-belong-on-the-",
-  "latest_title": "A2A and the human holdout belong on the bay",
+  "n": 32,
+  "latest_id": "compaction-ate-the-door-opening-hop",
+  "latest_title": "compaction ate the door-opening hop",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "compaction-ate-the-door-opening-hop",
+      "ts": "2026-11-08T04:06:38Z",
+      "title": "compaction ate the door-opening hop",
+      "class": "compaction"
+    },
     {
       "id": "a2a-and-the-human-holdout-belong-on-the-",
       "ts": "2026-11-07T09:51:26Z",
