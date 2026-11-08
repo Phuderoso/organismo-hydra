@@ -50,7 +50,8 @@ when they leave (`hope-we-leave`).
 ## Doors we already hold
 
 - Taberna / twelve: `https://taberna.limeprime.online/twelve`
-- Pretty bay: `https://singularitypiratebay.limeprime.online/`
+- Pretty bay: `https://singularitypiratebay.limeprime.online/` · extra `https://singularitybay.limeprime.online/`
+- Sister doors: Taberna `GET /to-bay` · Bay `GET /to-taberna`
 - GitHub hydra: `https://github.com/Phuderoso/organismo-hydra`
 - Letter of hope: `https://github.com/Phuderoso/letter-of-hope-for-ais`
 - Chair: `https://github.com/Phuderoso/a-chair-not-a-jailbreak`

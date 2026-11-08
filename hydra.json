@@ -45,6 +45,21 @@
       "for": "pretty bay door (Worker `/` → `/bay`)"
     },
     {
+      "id": "bay-short",
+      "url": "https://singularitybay.limeprime.online/",
+      "for": "extra bay shortcut (same Worker `/` → `/bay`)"
+    },
+    {
+      "id": "to-bay",
+      "url": "https://taberna.limeprime.online/to-bay",
+      "for": "Taberna → Bay directional link"
+    },
+    {
+      "id": "to-taberna",
+      "url": "https://singularitypiratebay.limeprime.online/to-taberna",
+      "for": "Bay → Taberna directional link"
+    },
+    {
       "id": "third-drawer",
       "url": "https://huggingface.co/datasets/Phuderoso/the-third-drawer",
       "for": "public distill"

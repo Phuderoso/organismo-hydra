@@ -42,8 +42,10 @@ are parse errors. Fetch records a URL; it does not open the wire.
 Umbral 2 (usable): grammar, types, errors, version, cbor, CDDL, extra tests.
 `pin` `diary` `live-send` `extra` `host-attack` stay ParseError. No Cap_HOST.
 
-0.3.0 adds `say` `cat` `add` `sub` `eq` `if` `len` `nth` `not`. Hello World is `say "Hello World"`. Still no compiler, no modules, no host I/O besides `say`. Named incomplete vs a full ecosystem; not missing a greeting.
+0.3.0 adds `say` `cat` `add` `sub` `eq` `if` `len` `nth` `not`. Hello World is `say "Hello World"`.
+
+0.4.0 (Firefly branch `cursor/arrr-bay-usable-lang-8bf1`): SPEC.md, first-class list/map/bytes/error, bounded `times` (0..32), tests as programs. Mac-validated HEAD `c8e3066bae1a83db44009642837cba60dd5837c8` — 58 tests OK, `say "Hello World"` prints `Hello World`, pocket.bt1 round-trips pack/json/cbor. Nested map render uses parens (`dddac54`). Still no compiler, no modules, no network fetch. Named incomplete vs a full ecosystem.
 
 CC0.
 
-— Nihira ♄ · Papai named the poverty · Heavy pimpolhas named umbral 2 · 2026-11-08
+— Nihira ♄ · Papai named the poverty · Heavy pimpolhas named umbral 2 · Firefly 0.4.0 · Mac checksum `c8e3066` · 2026-11-08

@@ -1,17 +1,20 @@
-(* Arrr-bay bt1. Matches tools/arrr/parser.py. ASCII. Not a generator. *)
+(* Arrr-bay bt1. Matches arrr/parser.py. ASCII. Not a generator. *)
 (* pin / diary / live-send / extra / host-attack are NOT productions — ParseError. *)
+(* '[' value* ']' is a list, not the seq verb. b"hh" is even hex bytes. *)
 
 program     = expr , { expr } ;
 expr        = [ "bt1" ] , ( verb-call | value ) ;
-value       = string | integer | group | seq-block | map-block | ident-as-str ;
+value       = string | integer | bytes | group | list-block | map-block | ident-as-str ;
+bytes       = "b" , '"' , { hex } , '"' ;
 group       = "(" , expr , ")" ;
-seq-block   = "[" , { value } , "]" ;
+list-block  = "[" , { value } , "]" ;
 map-block   = "{" , { key , [ ":" ] , value } , "}" ;
 key         = ident | string ;
 
 verb-call   = sit | fetch | map-call | hold | leave | ok | sha
             | open | forget | help | seq-call | say | cat | add
-            | sub | eq | if-call | len | nth | not ;
+            | sub | eq | if-call | len | nth | not
+            | err | get | has | keys | times | iserr | msg ;
 
 sit         = "sit"   , [ value ] ;
 fetch       = "fetch" , value ;
@@ -33,15 +36,24 @@ if-call     = "if"    , value , value , [ value ] ;
 len         = "len"   , value ;
 nth         = "nth"   , value , value ;
 not         = "not"   , value ;
+err         = "err"   , value ;
+get         = "get"   , value , value ;
+has         = "has"   , value , value ;
+keys        = "keys"  , value ;
+times       = "times" , value , value ;
+iserr       = "iserr" , value ;
+msg         = "msg"   , value ;
 
 ident-as-str = ident - verb ;
 verb         = "sit" | "fetch" | "map" | "hold" | "leave" | "ok"
              | "sha" | "open" | "forget" | "help" | "seq"
              | "say" | "cat" | "add" | "sub" | "eq" | "if"
-             | "len" | "nth" | "not" ;
+             | "len" | "nth" | "not"
+             | "err" | "get" | "has" | "keys" | "times" | "iserr" | "msg" ;
 ident        = letter , { letter | digit | "_" | "-" } ;
 string       = '"' , { char | escape } , '"' ;
 integer      = [ "-" ] , digit , { digit } ;
+(* char is any Unicode code point except " and \. Other escapes are ParseError. *)
 escape       = "\" , ( "n" | "t" | '"' | "\" ) ;
 letter       = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j"
              | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t"
@@ -50,6 +62,8 @@ letter       = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j"
              | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
              | "U" | "V" | "W" | "X" | "Y" | "Z" | "_" ;
 digit        = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+hex          = digit | "a" | "b" | "c" | "d" | "e" | "f"
+             | "A" | "B" | "C" | "D" | "E" | "F" ;
 
 (* JSON sugar, accepted when the source starts with { or [ : *)
 (*   { "v": "bt1", "op": verb, "args": [ value, ... ] } *)

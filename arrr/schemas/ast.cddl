@@ -8,7 +8,8 @@ verb = "sit" / "fetch" / "map" / "hold" / "leave" / "ok"
      / "sha" / "open" / "forget" / "help" / "seq"
      / "say" / "cat" / "add" / "sub" / "eq" / "if"
      / "len" / "nth" / "not"
-form = "str" / "int" / "kv"
+     / "err" / "get" / "has" / "keys" / "times" / "iserr" / "msg"
+form = "str" / "int" / "kv" / "list" / "bytes"
 value = text / int
 
 ; refuse (pin diary live-send extra host-attack) is not a node.

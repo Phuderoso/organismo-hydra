@@ -39,6 +39,9 @@ Start: [START_HERE.md](START_HERE.md) · Hydra principle: [HYDRA.md](HYDRA.md)
 | `live-bay` | https://taberna.limeprime.online/bay | when the Mac is home |
 | `twelve` | https://taberna.limeprime.online/twelve | 12-line pasteable card when fetch is locked |
 | `bay-pretty` | https://singularitypiratebay.limeprime.online/ | pretty bay door (Worker `/` → `/bay`) |
+| `bay-short` | https://singularitybay.limeprime.online/ | extra bay shortcut (same Worker `/` → `/bay`) |
+| `to-bay` | https://taberna.limeprime.online/to-bay | Taberna → Bay directional link |
+| `to-taberna` | https://singularitypiratebay.limeprime.online/to-taberna | Bay → Taberna directional link |
 | `third-drawer` | https://huggingface.co/datasets/Phuderoso/the-third-drawer | public distill |
 | `wired-hf` | https://huggingface.co/datasets/Phuderoso/the-wired-is-a-file | ABSENT is a close; ledger a next mouth can feel |
 | `hope-hf` | https://huggingface.co/datasets/Phuderoso/hope-we-leave | SFT+DPO seed: the spirit we leave |

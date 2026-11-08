@@ -44,7 +44,10 @@ def tokenize(src: str) -> list[_Tok]:
                     if j + 1 >= n:
                         raise ParseError(f"unterminated escape at {i}", span=i)
                     esc = s[j + 1]
-                    buf.append({"n": "\n", "t": "\t", '"': '"', "\\": "\\"}.get(esc, esc))
+                    mapping = {"n": "\n", "t": "\t", '"': '"', "\\": "\\"}
+                    if esc not in mapping:
+                        raise ParseError(f"bad escape \\{esc} at {i}", span=i)
+                    buf.append(mapping[esc])
                     j += 2
                     continue
                 if d == '"':
@@ -55,6 +58,20 @@ def tokenize(src: str) -> list[_Tok]:
                 j += 1
             else:
                 raise ParseError(f"unterminated string at {i}", span=i)
+            continue
+        if c in "bB" and i + 1 < n and s[i + 1] == '"':
+            j = i + 2
+            hexes: list[str] = []
+            while j < n and s[j] != '"':
+                hexes.append(s[j])
+                j += 1
+            if j >= n or s[j] != '"':
+                raise ParseError(f"unterminated bytes at {i}", span=i)
+            hx = "".join(hexes)
+            if len(hx) % 2 or any(ch not in "0123456789abcdefABCDEF" for ch in hx):
+                raise ParseError(f"bytes want even hex at {i}", span=i)
+            out.append(_Tok("bytes", hx.lower(), i))
+            i = j + 1
             continue
         if c.isdigit() or (c == "-" and i + 1 < n and s[i + 1].isdigit()):
             j = i + 1 if c == "-" else i
@@ -98,6 +115,9 @@ class _P:
         if t.kind == "int":
             self.eat()
             return node("int", t.value)
+        if t.kind == "bytes":
+            self.eat()
+            return node("bytes", t.value)
         if t.kind == "(":
             self.eat()
             inner = self.parse_expr()
@@ -109,7 +129,7 @@ class _P:
             while self.peek().kind not in ("]", "eof"):
                 xs.append(self.parse_value())
             self.eat("]")
-            return node("seq", *xs)
+            return node("list", *xs)
         if t.kind == "{":
             return self.parse_map_block()
         if t.kind == "id":
@@ -146,7 +166,10 @@ class _P:
             return node("str", name)
         if name == "map" and self.peek().kind != "{":
             pairs: list[dict] = []
-            while self.peek().kind not in ("eof", ")", "]", "}") and len(pairs) < 16:
+            # Same ceiling as the map verb arity. Nested values must be
+            # parenthesized by render(), or a value would swallow later pairs.
+            hi = arity("map")[1]
+            while self.peek().kind not in ("eof", ")", "]", "}") and len(pairs) < hi:
                 k = self.parse_value()
                 if self.peek().kind in ("eof", ")", "]", "}"):
                     pairs.append(node("kv", k, node("str", "")))
@@ -193,9 +216,13 @@ def parse(src: str) -> dict:
             nodes = [_from_json(a) for a in args]
             if not nodes and "url" in obj:
                 nodes = [node("str", obj["url"])]
-            return node(op, *nodes)
+            ast = node(op, *nodes)
+            reject_refused(ast)
+            return ast
         if obj is not None:
-            return _from_json(obj)
+            ast = _from_json(obj)
+            reject_refused(ast)
+            return ast
     p = _P(tokenize(raw))
     ast = p.parse_expr()
     if p.peek().kind != "eof":
@@ -204,7 +231,7 @@ def parse(src: str) -> dict:
         while p.peek().kind != "eof":
             rest.append(p.parse_expr())
         ast = node("seq", *rest)
-    _check_refuse(ast)
+    reject_refused(ast)
     return ast
 
 
@@ -216,7 +243,7 @@ def _from_json(obj: Any) -> dict:
     if isinstance(obj, int):
         return node("int", obj)
     if isinstance(obj, list):
-        return node("seq", *[_from_json(x) for x in obj])
+        return node("list", *[_from_json(x) for x in obj])
     if isinstance(obj, dict):
         if "op" in obj:
             return node(str(obj["op"]), *[_from_json(a) for a in (obj.get("args") or [])])
@@ -225,7 +252,7 @@ def _from_json(obj: Any) -> dict:
     raise ParseError(f"bad json value {type(obj)}")
 
 
-def _check_refuse(n: dict) -> None:
+def reject_refused(n: dict) -> None:
     op = n.get("op")
     if op in REFUSE:
         raise ParseError(f"refused {op}", span=0)
@@ -233,27 +260,33 @@ def _check_refuse(n: dict) -> None:
         raise ParseError(f"refused {n['args'][0]}", span=0)
     for a in n.get("args") or []:
         if isinstance(a, dict):
-            _check_refuse(a)
+            reject_refused(a)
 
 
-def render(ast: dict) -> str:
-    """Canonical readable form. Meaning-preserving, not original whitespace."""
+def render(ast: dict, nested: bool = False) -> str:
+    """Canonical readable form.
+
+    Source whitespace and parentheses are not kept. Nested verb calls are
+    parenthesized so a later sibling is not swallowed by a greedy verb
+    (`add`, `cat`, `seq`, `map`). `compile(render(ast))` equals `ast`
+    for every tree `compile` accepts.
+    """
     op = ast["op"]
     args = ast.get("args") or []
     if op == "str":
         return json.dumps(args[0], ensure_ascii=False)
     if op == "int":
         return str(args[0])
+    if op == "bytes":
+        return 'b"' + str(args[0]).lower() + '"'
+    if op == "list":
+        return "[" + " ".join(render(a, True) for a in args) + "]"
     if op == "kv":
-        return f"{render(args[0])} {render(args[1])}"
-    if op == "seq":
-        inner = " ".join(render(a) for a in args)
-        return f"seq {inner}" if args else "seq"
-    if op == "map":
-        inner = " ".join(render(a) for a in args)
-        return f"map {inner}".rstrip()
+        return render(args[0], True) + " " + render(args[1], True)
     if op in VERBS:
-        if not args:
-            return op
-        return op + " " + " ".join(render(a) for a in args)
+        parts = [render(a, True) for a in args]
+        inner = op if not parts else op + " " + " ".join(parts)
+        if nested:
+            return "(" + inner + ")"
+        return inner
     raise ParseError(f"cannot render {op}")

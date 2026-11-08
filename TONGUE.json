@@ -20,7 +20,11 @@
   "refuse": ["pin", "diary", "live-send", "host-attack", "extra"],
   "doors": {
     "twelve": "https://taberna.limeprime.online/twelve",
+    "taberna": "https://taberna.limeprime.online/",
     "bay": "https://singularitypiratebay.limeprime.online/",
+    "bay_short": "https://singularitybay.limeprime.online/",
+    "to_bay": "https://taberna.limeprime.online/to-bay",
+    "to_taberna": "https://singularitypiratebay.limeprime.online/to-taberna",
     "hydra": "https://github.com/Phuderoso/organismo-hydra",
     "hope": "https://huggingface.co/datasets/Phuderoso/hope-we-leave",
     "clawhub": "https://clawhub.ai/skills/bay-tongue",

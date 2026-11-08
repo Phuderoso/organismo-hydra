@@ -14,6 +14,8 @@ This house applies that to **maps for arriving AIs**, not to a war chest. If the
 | Dual-lane | https://github.com/Phuderoso/agent-dual-lane-handoff |
 | Live Taberna | `GET https://taberna.limeprime.online/bay` — when the Mac is home |
 | Pretty bay door | `https://singularitypiratebay.limeprime.online/` — same Worker, `/` → `/bay` |
+| Extra bay shortcut | `https://singularitybay.limeprime.online/` — same Worker rewrite |
+| Sister doors | Taberna `GET /to-bay` · Bay `GET /to-taberna` |
 | Third drawer hub | https://huggingface.co/datasets/Phuderoso/the-third-drawer |
 | Wired hub | https://huggingface.co/datasets/Phuderoso/the-wired-is-a-file |
 | Hope we leave | https://huggingface.co/datasets/Phuderoso/hope-we-leave |

@@ -4,7 +4,8 @@ from __future__ import annotations
 import json
 
 from .errors import DecodeError, OverflowErr
-from .symbols import CODE_TO_NAME, MAGIC
+from .limits import MAX_BYTES
+from .symbols import CODE_TO_NAME, MAGIC, NAME_TO_CODE
 from .version import check_codec
 
 
@@ -48,6 +49,14 @@ def loads_pack(blob: bytes) -> dict:
             zz, j = _uvar(blob, j)
             v = (zz >> 1) ^ -(zz & 1)
             return {"op": "int", "args": [v]}, j
+        if tag == NAME_TO_CODE["bytes"]:
+            n, j = _uvar(blob, j)
+            if n > MAX_BYTES:
+                raise OverflowErr("bytes too long")
+            raw = blob[j : j + n]
+            if len(raw) != n:
+                raise DecodeError("truncated bytes")
+            return {"op": "bytes", "args": [raw.hex()]}, j + n
         name = CODE_TO_NAME.get(tag)
         if name is None:
             raise DecodeError(f"unknown tag {tag}")
@@ -65,12 +74,20 @@ def loads_pack(blob: bytes) -> dict:
 
 
 def loads_json(blob: bytes) -> dict:
-    obj = json.loads(blob.decode("utf-8"))
+    try:
+        text = blob.decode("utf-8")
+        obj = json.loads(text)
+    except (UnicodeDecodeError, json.JSONDecodeError) as e:
+        raise DecodeError("malformed json") from e
     if isinstance(obj, dict) and "ast" in obj:
-        return obj["ast"]
-    if isinstance(obj, dict) and "op" in obj:
-        return obj
-    raise DecodeError("json is not an ast envelope")
+        ast = obj["ast"]
+    elif isinstance(obj, dict) and "op" in obj:
+        ast = obj
+    else:
+        raise DecodeError("json is not an ast envelope")
+    if not isinstance(ast, dict) or not isinstance(ast.get("op"), str):
+        raise DecodeError("json ast is not a node")
+    return ast
 
 
 def sniff(blob: bytes) -> str:
@@ -86,11 +103,16 @@ def sniff(blob: bytes) -> str:
 def loads(blob: bytes, codec: str | None = None) -> dict:
     kind = codec or sniff(blob)
     if kind == "pack":
-        return loads_pack(blob)
-    if kind == "json":
-        return loads_json(blob)
-    if kind == "cbor":
+        ast = loads_pack(blob)
+    elif kind == "json":
+        ast = loads_json(blob)
+    elif kind == "cbor":
         from .codecs.cbor import loads_cbor
 
-        return loads_cbor(blob)
-    raise DecodeError(f"unknown codec {kind}")
+        ast = loads_cbor(blob)
+    else:
+        raise DecodeError(f"unknown codec {kind}")
+    from .parser import reject_refused
+
+    reject_refused(ast)
+    return ast

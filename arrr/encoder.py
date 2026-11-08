@@ -37,6 +37,12 @@ def dumps_pack(ast: dict) -> bytes:
             v = int(args[0])
             zz = (v << 1) ^ (0 if v >= 0 else -1)
             return b"\x21" + _uvar(zz)
+        if op == "bytes":
+            try:
+                raw = bytes.fromhex(str(args[0]))
+            except ValueError as e:
+                raise CodecError("bad bytes hex") from e
+            return bytes([NAME_TO_CODE["bytes"]]) + _uvar(len(raw)) + raw
         code = NAME_TO_CODE.get(op)
         if code is None:
             raise CodecError(f"unknown op {op}")

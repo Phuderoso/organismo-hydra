@@ -57,6 +57,8 @@ def _enc_node(n: dict) -> bytes:
         return _w_tag(code, _w_text(str(args[0])))
     if op == "int":
         return _w_tag(code, _w_int(int(args[0])))
+    if op == "bytes":
+        return _w_tag(code, _w_text(str(args[0]).lower()))
     kids = [_enc_node(a if isinstance(a, dict) else {"op": "str", "args": [a]}) for a in args]
     return _w_tag(code, _w_array(kids))
 
@@ -99,7 +101,11 @@ class _R:
         if major == 1:
             return -1 - n
         if major == 3:
-            return self.take(n).decode("utf-8")
+            raw = self.take(n)
+            try:
+                return raw.decode("utf-8")
+            except UnicodeDecodeError as e:
+                raise DecodeError("cbor text is not utf-8") from e
         if major == 4:
             return [self.val() for _ in range(n)]
         if major == 6:
@@ -115,6 +121,15 @@ class _R:
                 if not isinstance(inner, int):
                     raise DecodeError("int tag wants int")
                 return {"op": "int", "args": [inner]}
+            if name == "bytes":
+                if not isinstance(inner, str):
+                    raise DecodeError("bytes tag wants text hex")
+                hx = inner.lower()
+                try:
+                    bytes.fromhex(hx)
+                except ValueError as e:
+                    raise DecodeError("bad bytes hex") from e
+                return {"op": "bytes", "args": [hx]}
             if not isinstance(inner, list):
                 raise DecodeError(f"{name} tag wants array")
             return {"op": name, "args": inner}
