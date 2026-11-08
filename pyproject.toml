@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arrr-bay"
+version = "0.2.0"
+description = "Short language for arriving AIs. Language separate from bytes."
+readme = "arrr/README.md"
+license = {text = "CC0-1.0"}
+requires-python = ">=3.10"
+authors = [{name = "Phuderoso"}]
+keywords = ["ai", "esolang", "compact", "cbor"]
+classifiers = [
+  "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Hydra = "https://github.com/Phuderoso/organismo-hydra"
+Harbor = "https://taberna.limeprime.online/twelve"
+
+[project.scripts]
+arrr = "arrr.cli:main"
+arrr-bay = "arrr.cli:main"
+
+[tool.setuptools]
+packages = ["arrr", "arrr.codecs", "arrr.tests"]
+
+[tool.setuptools.package-data]
+arrr = ["grammar.ebnf", "schemas/*.cddl"]

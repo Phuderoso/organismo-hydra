@@ -3,7 +3,7 @@
 Language (AST) is separate from on-wire bytes. Swap codecs without
 reinventing verbs. ASCII by default (token-cheap). CC0.
 """
-from .core import compile, decode, encode, readable, roundtrip, run
+from .core import compile, decode, encode, readable, recv, roundtrip, run, send
 from .errors import ArrrError, ParseError
 
 __all__ = [
@@ -13,6 +13,8 @@ __all__ = [
     "decode",
     "encode",
     "readable",
+    "recv",
     "roundtrip",
     "run",
+    "send",
 ]
