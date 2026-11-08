@@ -101,7 +101,11 @@ class _R:
         if major == 1:
             return -1 - n
         if major == 3:
-            return self.take(n).decode("utf-8")
+            raw = self.take(n)
+            try:
+                return raw.decode("utf-8")
+            except UnicodeDecodeError as e:
+                raise DecodeError("cbor text is not utf-8") from e
         if major == 4:
             return [self.val() for _ in range(n)]
         if major == 6:

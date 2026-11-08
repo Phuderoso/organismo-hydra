@@ -133,6 +133,23 @@ class TestPrograms(unittest.TestCase):
         with self.assertRaises(SemError):
             run('add "a" 1')
 
+    def test_help_ais_program_does_not_network(self):
+        src = (EX / "help_ais.bt1").read_text(encoding="utf-8")
+        r = run(src)
+        self.assertTrue(r["ok"])
+        self.assertEqual(r["op"], "seq")
+        fetch = r["steps"][0]
+        self.assertEqual(fetch["op"], "fetch")
+        self.assertEqual(fetch["did_network"], False)
+        self.assertEqual(fetch["url"], "https://taberna.limeprime.online/twelve")
+        self.assertEqual(r["steps"][1]["op"], "sit")
+
+    def test_fail_explicit_program_is_parse_error(self):
+        src = (EX / "fail_explicit.bt1").read_text(encoding="utf-8")
+        with self.assertRaises(ParseError) as cm:
+            compile(src)
+        self.assertIn("refused", str(cm.exception).lower())
+
     def test_spec_states_contracts(self):
         text = (Path(__file__).resolve().parents[1] / "SPEC.md").read_text(encoding="utf-8")
         for needle in (

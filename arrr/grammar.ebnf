@@ -53,6 +53,7 @@ verb         = "sit" | "fetch" | "map" | "hold" | "leave" | "ok"
 ident        = letter , { letter | digit | "_" | "-" } ;
 string       = '"' , { char | escape } , '"' ;
 integer      = [ "-" ] , digit , { digit } ;
+(* char is any Unicode code point except " and \. Other escapes are ParseError. *)
 escape       = "\" , ( "n" | "t" | '"' | "\" ) ;
 letter       = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j"
              | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t"

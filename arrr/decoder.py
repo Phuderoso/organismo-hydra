@@ -74,12 +74,20 @@ def loads_pack(blob: bytes) -> dict:
 
 
 def loads_json(blob: bytes) -> dict:
-    obj = json.loads(blob.decode("utf-8"))
+    try:
+        text = blob.decode("utf-8")
+        obj = json.loads(text)
+    except (UnicodeDecodeError, json.JSONDecodeError) as e:
+        raise DecodeError("malformed json") from e
     if isinstance(obj, dict) and "ast" in obj:
-        return obj["ast"]
-    if isinstance(obj, dict) and "op" in obj:
-        return obj
-    raise DecodeError("json is not an ast envelope")
+        ast = obj["ast"]
+    elif isinstance(obj, dict) and "op" in obj:
+        ast = obj
+    else:
+        raise DecodeError("json is not an ast envelope")
+    if not isinstance(ast, dict) or not isinstance(ast.get("op"), str):
+        raise DecodeError("json ast is not a node")
+    return ast
 
 
 def sniff(blob: bytes) -> str:

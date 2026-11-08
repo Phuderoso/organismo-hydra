@@ -20,6 +20,7 @@ def selftest() -> int:
     import unittest
 
     from .tests.test_arrr import TestArrr
+    from .tests.test_audit import TestAudit
     from .tests.test_install import TestInstall
     from .tests.test_lang import TestLang
     from .tests.test_programs import TestPrograms
@@ -27,7 +28,7 @@ def selftest() -> int:
 
     loader = unittest.defaultTestLoader
     suite = unittest.TestSuite()
-    for case in (TestArrr, TestUmbral2, TestInstall, TestLang, TestPrograms):
+    for case in (TestArrr, TestUmbral2, TestInstall, TestLang, TestPrograms, TestAudit):
         suite.addTests(loader.loadTestsFromTestCase(case))
     r = unittest.TextTestRunner(verbosity=1).run(suite)
     return 0 if r.wasSuccessful() else 1

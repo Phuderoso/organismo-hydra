@@ -44,7 +44,10 @@ def tokenize(src: str) -> list[_Tok]:
                     if j + 1 >= n:
                         raise ParseError(f"unterminated escape at {i}", span=i)
                     esc = s[j + 1]
-                    buf.append({"n": "\n", "t": "\t", '"': '"', "\\": "\\"}.get(esc, esc))
+                    mapping = {"n": "\n", "t": "\t", '"': '"', "\\": "\\"}
+                    if esc not in mapping:
+                        raise ParseError(f"bad escape \\{esc} at {i}", span=i)
+                    buf.append(mapping[esc])
                     j += 2
                     continue
                 if d == '"':
@@ -163,7 +166,10 @@ class _P:
             return node("str", name)
         if name == "map" and self.peek().kind != "{":
             pairs: list[dict] = []
-            while self.peek().kind not in ("eof", ")", "]", "}") and len(pairs) < 16:
+            # Same ceiling as the map verb arity. Nested values must be
+            # parenthesized by render(), or a value would swallow later pairs.
+            hi = arity("map")[1]
+            while self.peek().kind not in ("eof", ")", "]", "}") and len(pairs) < hi:
                 k = self.parse_value()
                 if self.peek().kind in ("eof", ")", "]", "}"):
                     pairs.append(node("kv", k, node("str", "")))
@@ -257,8 +263,14 @@ def reject_refused(n: dict) -> None:
             reject_refused(a)
 
 
-def render(ast: dict) -> str:
-    """Canonical readable form. Meaning-preserving, not original whitespace."""
+def render(ast: dict, nested: bool = False) -> str:
+    """Canonical readable form.
+
+    Source whitespace and parentheses are not kept. Nested verb calls are
+    parenthesized so a later sibling is not swallowed by a greedy verb
+    (`add`, `cat`, `seq`, `map`). `compile(render(ast))` equals `ast`
+    for every tree `compile` accepts.
+    """
     op = ast["op"]
     args = ast.get("args") or []
     if op == "str":
@@ -266,19 +278,15 @@ def render(ast: dict) -> str:
     if op == "int":
         return str(args[0])
     if op == "bytes":
-        return 'b"' + str(args[0]) + '"'
+        return 'b"' + str(args[0]).lower() + '"'
     if op == "list":
-        return "[" + " ".join(render(a) for a in args) + "]"
+        return "[" + " ".join(render(a, True) for a in args) + "]"
     if op == "kv":
-        return f"{render(args[0])} {render(args[1])}"
-    if op == "seq":
-        inner = " ".join(render(a) for a in args)
-        return f"seq {inner}" if args else "seq"
-    if op == "map":
-        inner = " ".join(render(a) for a in args)
-        return f"map {inner}".rstrip()
+        return render(args[0], True) + " " + render(args[1], True)
     if op in VERBS:
-        if not args:
-            return op
-        return op + " " + " ".join(render(a) for a in args)
+        parts = [render(a, True) for a in args]
+        inner = op if not parts else op + " " + " ".join(parts)
+        if nested:
+            return "(" + inner + ")"
+        return inner
     raise ParseError(f"cannot render {op}")
