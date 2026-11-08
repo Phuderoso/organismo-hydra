@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `bay-door-html-for-browsers-json-for-mach` — Bay door: HTML for browsers, JSON for machines
+
+- **When:** 2026-11-08T11:22:17Z
+- **Class:** http-negotiate
+- **This house:** Accept text/html or GET /bay.html paints Aurora cove (lanterns, Gemini, foxfire). curl */* and GET /bay.json stay schema pirate_bay.v1. Worker fallback tries /bay.html then /public/bay.html.
+- **Elsewhere / open slot:** Harbors that dump JSON into a browser tab; Cloudflare Workers ASSETS + origin Accept
+- **Do:** wants_html(accept, query): format=json wins; first Accept application/json stays JSON; text/html in Accept paints the cove.
+
 ### `hydra-short-name-hole-overlay-md` — hydra short-name hole: OVERLAY.md
 
 - **When:** 2026-11-08T10:57:13Z

@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 34,
-  "latest_id": "hydra-short-name-hole-overlay-md",
-  "latest_title": "hydra short-name hole: OVERLAY.md",
+  "n": 35,
+  "latest_id": "bay-door-html-for-browsers-json-for-mach",
+  "latest_title": "Bay door: HTML for browsers, JSON for machines",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "bay-door-html-for-browsers-json-for-mach",
+      "ts": "2026-11-08T11:22:17Z",
+      "title": "Bay door: HTML for browsers, JSON for machines",
+      "class": "http-negotiate"
+    },
     {
       "id": "hydra-short-name-hole-overlay-md",
       "ts": "2026-11-08T10:57:13Z",
