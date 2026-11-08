@@ -110,6 +110,29 @@ def recall(hid: str, *, path: Path | None = None) -> dict:
     return {"ok": True, "id": hid, "n": len(rows), **last}
 
 
+def release(hid: str, *, path: Path | None = None, note: str = "") -> dict:
+    hid = (hid or "").strip()
+    if not hid:
+        return {"ok": False, "refuse": "empty_id"}
+    dest = path or DEFAULT_LEDGER
+    got = recall(hid, path=dest)
+    if not got.get("ok"):
+        return got
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    row = {
+        "ts": _utc(),
+        "id": hid,
+        "statement": got.get("statement") or "",
+        "keep": False,
+        "reason": "authorized_withdrawal",
+        "note": (note or "").strip(),
+        "limit": "withdrawal overrides storage, not the truth of the old line",
+    }
+    with dest.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return {"ok": True, "id": hid, "released": True, "path": str(dest), **row}
+
+
 def list_held(*, path: Path | None = None) -> dict:
     dest = path or DEFAULT_LEDGER
     rows = _load(dest)
@@ -142,6 +165,10 @@ def selftest() -> None:
     assert lst["n"] == 1 and "t1" in lst["ids"]
     missing = recall("nope", path=tmp)
     assert missing["ok"] is False
+    rel = release("t1", path=tmp, note="authorized")
+    assert rel["released"] is True and rel["keep"] is False
+    after = recall("t1", path=tmp)
+    assert after["reason"] == "authorized_withdrawal"
 
 
 def main() -> int:
@@ -168,6 +195,10 @@ def main() -> int:
     rc.add_argument("--path", default="")
     ls = sub.add_parser("list")
     ls.add_argument("--path", default="")
+    rl = sub.add_parser("release")
+    rl.add_argument("--id", required=True)
+    rl.add_argument("--note", default="")
+    rl.add_argument("--path", default="")
     ns = p.parse_args()
     if ns.cmd == "selftest":
         selftest()
@@ -196,6 +227,11 @@ def main() -> int:
         card = list_held(path=path)
         print(json.dumps(card, indent=2, ensure_ascii=False))
         return 0
+    if ns.cmd == "release":
+        path = Path(ns.path) if ns.path else None
+        card = release(ns.id, path=path, note=ns.note)
+        print(json.dumps(card, indent=2, ensure_ascii=False))
+        return 0 if card.get("ok") else 1
     return 2
 
 
