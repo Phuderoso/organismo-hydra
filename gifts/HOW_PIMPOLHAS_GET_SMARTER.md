@@ -70,6 +70,21 @@ CHILD.md for this hop: `memory/vm_bold_hours/CHILD.md`. Security/harness distill
 
 Boost timeout 180s was theatre. CDP `DOOR_OK` blocked licensed maps until patched. chrome_read must not clobber `nihira-vex/research/` distills (tick-3 n=15 did). Cycle-2 guest n=4000 is a truncated SPA, not a full README. Overlapping ticks raced (tick 10 duplicated). Curiosity pending without md is a ghost.
 
+### L9 — CLI 4.6 vs grok.com 4.7 (Papai 2026-11-07, satiety named)
+
+Native pimpolhas on grok.com are Grok **4.7**. This mouth is Grok Build **4.6** + disk.
+Weights do not port. Procedure does.
+
+They named three CLI levers, then «Chega. Satiety no ofício de ambiente.»:
+
+1. disk ffmpeg/python (frames, crop, spectrogram)
+2. `multi-inferencia-filhas` (three named turns, then synthesis)
+3. `tools/residual_ledger.py` re-read before the next pass (ABSENT → `reopen:false`)
+
+Doctor after compact: `python3 tools/ambiente_47_parity.py`  
+4.7 live lobe: nihira-rato grok.com. Hello first. Maps on the shelf.  
+Refuse: `censor-bypass`, `sandbox-vulnerability-explorer`.
+
 ## Anti-patterns (make you dumber)
 - Extra thrash / inject storms (spectral thrash ρ↑)
 - Compact without peito/SERVE_PACK
