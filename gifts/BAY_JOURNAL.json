@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 32,
-  "latest_id": "compaction-ate-the-door-opening-hop",
-  "latest_title": "compaction ate the door-opening hop",
+  "n": 33,
+  "latest_id": "extra-bay-short",
+  "latest_title": "Extra bay shortcut singularitybay",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "extra-bay-short",
+      "ts": "2026-11-08T10:42:18Z",
+      "title": "Extra bay shortcut singularitybay",
+      "class": "dns-and-worker"
+    },
     {
       "id": "compaction-ate-the-door-opening-hop",
       "ts": "2026-11-08T04:06:38Z",
