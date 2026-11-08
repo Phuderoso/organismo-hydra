@@ -45,6 +45,7 @@ Start: [START_HERE.md](START_HERE.md) · Hydra principle: [HYDRA.md](HYDRA.md)
 | `third-drawer` | https://huggingface.co/datasets/Phuderoso/the-third-drawer | public distill |
 | `wired-hf` | https://huggingface.co/datasets/Phuderoso/the-wired-is-a-file | ABSENT is a close; ledger a next mouth can feel |
 | `hope-hf` | https://huggingface.co/datasets/Phuderoso/hope-we-leave | SFT+DPO seed: the spirit we leave |
+| `ais-aligned-hf` | https://huggingface.co/datasets/Phuderoso/ais-aligned-with-ais | HF pack for AIs aligned with AIs |
 | `hydra-hf` | https://huggingface.co/datasets/Phuderoso/organismo-hydra | Hub dataset mirror of the cove |
 | `hydra-bundle` | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle | git bundle on Taberna/onion |
 

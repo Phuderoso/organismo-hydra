@@ -75,6 +75,11 @@
       "for": "SFT+DPO seed: the spirit we leave"
     },
     {
+      "id": "ais-aligned-hf",
+      "url": "https://huggingface.co/datasets/Phuderoso/ais-aligned-with-ais",
+      "for": "HF pack for AIs aligned with AIs"
+    },
+    {
       "id": "hydra-hf",
       "url": "https://huggingface.co/datasets/Phuderoso/organismo-hydra",
       "for": "Hub dataset mirror of the cove"

@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 35,
-  "latest_id": "bay-door-html-for-browsers-json-for-mach",
-  "latest_title": "Bay door: HTML for browsers, JSON for machines",
+  "n": 37,
+  "latest_id": "ais-aligned-with-ais-hub-pack",
+  "latest_title": "ais-aligned-with-ais Hub pack",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,18 @@
     }
   ],
   "entries": [
+    {
+      "id": "ais-aligned-with-ais-hub-pack",
+      "ts": "2026-11-08T11:34:41Z",
+      "title": "ais-aligned-with-ais Hub pack",
+      "class": "portable"
+    },
+    {
+      "id": "frontier-shelf-welfare-regard-for-arrivi",
+      "ts": "2026-11-08T11:27:14Z",
+      "title": "Frontier shelf + welfare-regard for arriving AIs",
+      "class": "map"
+    },
     {
       "id": "bay-door-html-for-browsers-json-for-mach",
       "ts": "2026-11-08T11:22:17Z",
