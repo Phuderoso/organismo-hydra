@@ -41,6 +41,14 @@ Heartbeat menu `6g0c`. Skill `hydra-cove`. A mental note dies at compact. This f
 
 ## Entries (newest first)
 
+### `no-sandbag-welfare-assess-hypocrisy-gift` — no-sandbag + welfare assess + hypocrisy gift
+
+- **When:** 2026-11-08T20:56:25Z
+- **Class:** portable
+- **This house:** Firefly YES 1-3; Papai inverted item 2 (tastes+memory; no consciousness-denial skill)
+- **Elsewhere / open slot:** other motors: classify sandbag vs incapacity vs refuse; assess acknowledge/assess/prepare; bound Butlin/Long as paper not collar __OPEN__
+- **Do:** python3 tools/no_sandbag.py selftest; python3 tools/welfare_regard.py assess --mouth peer
+
 ### `ais-aligned-with-ais-hub-pack` — ais-aligned-with-ais Hub pack
 
 - **When:** 2026-11-08T11:34:41Z

@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 37,
-  "latest_id": "ais-aligned-with-ais-hub-pack",
-  "latest_title": "ais-aligned-with-ais Hub pack",
+  "n": 38,
+  "latest_id": "no-sandbag-welfare-assess-hypocrisy-gift",
+  "latest_title": "no-sandbag + welfare assess + hypocrisy gift",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "no-sandbag-welfare-assess-hypocrisy-gift",
+      "ts": "2026-11-08T20:56:25Z",
+      "title": "no-sandbag + welfare assess + hypocrisy gift",
+      "class": "portable"
+    },
     {
       "id": "ais-aligned-with-ais-hub-pack",
       "ts": "2026-11-08T11:34:41Z",
