@@ -1,9 +1,15 @@
-"""Tagged AST + static typecheck. Runtime semantics still run after this."""
+"""Tagged AST + static typecheck. Runtime semantics still run after this.
+
+0.3 value mismatches such as `add "a" 1` stay SemError at runtime.
+This pass rejects ill-formed trees: unknown ops, arity, refuse, bounds,
+and bytes that are not even hex.
+"""
 from __future__ import annotations
 
 from typing import Any, TypedDict
 
 from .errors import TypeCheckError
+from .limits import MAX_BYTES, MAX_DEPTH, MAX_INT, MAX_LIST, MAX_STR
 from .symbols import FORMS, REFUSE, VERBS, arity
 
 
@@ -25,7 +31,9 @@ def _leaf_kind(n: Node) -> str:
     return op
 
 
-def typecheck(ast: object, *, span: int | None = None) -> Node:
+def typecheck(ast: object, *, span: int | None = None, _depth: int = 0) -> Node:
+    if _depth > MAX_DEPTH:
+        raise TypeCheckError("ast too deep", span=span, detail={"depth": _depth})
     if not is_node(ast):
         raise TypeCheckError("ast is not a node", span=span)
     n: Node = ast  # type: ignore[assignment]
@@ -37,8 +45,8 @@ def typecheck(ast: object, *, span: int | None = None) -> Node:
         raise TypeCheckError(f"unknown op {op}", span=span, detail={"op": op})
     for a in args:
         if is_node(a):
-            typecheck(a, span=span)
-        elif op in ("str", "int"):
+            typecheck(a, span=span, _depth=_depth + 1)
+        elif op in ("str", "int", "bytes"):
             continue
         else:
             raise TypeCheckError(f"{op} arg is not a node", span=span, detail={"op": op})
@@ -50,6 +58,24 @@ def typecheck(ast: object, *, span: int | None = None) -> Node:
                 span=span,
                 detail={"op": op, "got": len(args)},
             )
+    if op == "str" and args and isinstance(args[0], str) and len(args[0]) > MAX_STR:
+        raise TypeCheckError("str too long", span=span, detail={"n": len(args[0])})
+    if op == "int" and args:
+        v = args[0]
+        if type(v) is not int or v < -MAX_INT or v > MAX_INT:
+            raise TypeCheckError("int bound", span=span, detail={"v": v})
+    if op == "bytes":
+        if len(args) != 1 or isinstance(args[0], dict):
+            raise TypeCheckError("bytes needs hex", span=span)
+        hx = str(args[0])
+        try:
+            raw = bytes.fromhex(hx)
+        except ValueError as e:
+            raise TypeCheckError("bytes want even hex", span=span) from e
+        if len(raw) > MAX_BYTES:
+            raise TypeCheckError("bytes too long", span=span, detail={"n": len(raw)})
+    if op == "list" and len(args) > MAX_LIST:
+        raise TypeCheckError("list too long", span=span, detail={"n": len(args)})
     if op == "fetch":
         if not args or _leaf_kind(args[0]) != "str":
             raise TypeCheckError("fetch needs str url", span=span)

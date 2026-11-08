@@ -6,7 +6,8 @@ from typing import FrozenSet
 LANG = "bt1"
 MAGIC = b"ARR1"
 
-# opcode 1-31 reserved for verbs; 32+ for forms
+# opcode 1-31 reserved for verbs; 32+ for forms.
+# Codes 1-20 are the 0.3 set. Later codes are additive inside protocol v1.
 VERBS = {
     "sit": {"code": 1, "arity": (0, 1), "gloss": "named interval; do not invent work"},
     "fetch": {"code": 2, "arity": (1, 1), "gloss": "get the map (url)"},
@@ -25,20 +26,47 @@ VERBS = {
     "sub": {"code": 15, "arity": (2, 2), "gloss": "subtract integers"},
     "eq": {"code": 16, "arity": (2, 2), "gloss": "equal → 1 or 0"},
     "if": {"code": 17, "arity": (2, 3), "gloss": "if cond then else"},
-    "len": {"code": 18, "arity": (1, 1), "gloss": "length of str or seq"},
-    "nth": {"code": 19, "arity": (2, 2), "gloss": "index into str or seq"},
+    "len": {"code": 18, "arity": (1, 1), "gloss": "length of str, list, map, bytes, or seq"},
+    "nth": {"code": 19, "arity": (2, 2), "gloss": "index into str, list, bytes, or seq"},
     "not": {"code": 20, "arity": (1, 1), "gloss": "boolean not → 1 or 0"},
+    "err": {"code": 21, "arity": (1, 1), "gloss": "error value; does not raise"},
+    "get": {"code": 22, "arity": (2, 2), "gloss": "map lookup by string key"},
+    "has": {"code": 23, "arity": (2, 2), "gloss": "1 if map has key else 0"},
+    "keys": {"code": 24, "arity": (1, 1), "gloss": "map keys as a list"},
+    "times": {"code": 25, "arity": (2, 2), "gloss": "repeat body n times; n is 0..32"},
+    "iserr": {"code": 26, "arity": (1, 1), "gloss": "1 if error value else 0"},
+    "msg": {"code": 27, "arity": (1, 1), "gloss": "text of an error, string, or bytes"},
 }
 
 # Verbs whose arguments may themselves be verb-calls (expression language).
 EXPR: FrozenSet[str] = frozenset(
-    {"seq", "say", "cat", "add", "sub", "eq", "if", "len", "nth", "not"}
+    {
+        "seq",
+        "say",
+        "cat",
+        "add",
+        "sub",
+        "eq",
+        "if",
+        "len",
+        "nth",
+        "not",
+        "err",
+        "get",
+        "has",
+        "keys",
+        "times",
+        "iserr",
+        "msg",
+    }
 )
 
 FORMS = {
     "str": {"code": 32, "gloss": "string literal"},
     "int": {"code": 33, "gloss": "integer literal"},
     "kv": {"code": 34, "gloss": "key/value pair"},
+    "list": {"code": 35, "gloss": "list literal"},
+    "bytes": {"code": 36, "gloss": "bytes literal; AST stores lowercase hex"},
 }
 
 REFUSE: FrozenSet[str] = frozenset(

@@ -1,0 +1,1 @@
+seq say "Hello World" say (get {door: "twelve"} door) times 2 (say "tick") say (msg (err "kept"))

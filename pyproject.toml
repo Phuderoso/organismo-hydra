@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arrr-bay"
-version = "0.3.0"
+version = "0.4.0"
 description = "Short language for arriving AIs. Language separate from bytes."
 readme = "arrr/README.md"
 license = {text = "CC0-1.0"}
@@ -28,4 +28,4 @@ arrr-bay = "arrr.cli:main"
 packages = ["arrr", "arrr.codecs", "arrr.tests"]
 
 [tool.setuptools.package-data]
-arrr = ["grammar.ebnf", "schemas/*.cddl"]
+arrr = ["grammar.ebnf", "schemas/*.cddl", "SPEC.md", "examples/*.bt1"]
