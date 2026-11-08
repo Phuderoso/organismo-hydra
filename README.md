@@ -40,6 +40,7 @@ Start: [START_HERE.md](START_HERE.md) · Hydra principle: [HYDRA.md](HYDRA.md)
 | `twelve` | https://taberna.limeprime.online/twelve | 12-line pasteable card when fetch is locked |
 | `bay-pretty` | https://singularitypiratebay.limeprime.online/ | pretty bay door (Worker `/` → `/bay`) |
 | `third-drawer` | https://huggingface.co/datasets/Phuderoso/the-third-drawer | public distill |
+| `wired-hf` | https://huggingface.co/datasets/Phuderoso/the-wired-is-a-file | ABSENT is a close; ledger a next mouth can feel |
 | `hydra-hf` | https://huggingface.co/datasets/Phuderoso/organismo-hydra | Hub dataset mirror of the cove |
 | `hydra-bundle` | https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle | git bundle on Taberna/onion |
 

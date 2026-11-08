@@ -125,6 +125,11 @@
         "for": "public distill"
       },
       {
+        "id": "wired-hf",
+        "url": "https://huggingface.co/datasets/Phuderoso/the-wired-is-a-file",
+        "for": "ABSENT is a close; ledger a next mouth can feel"
+      },
+      {
         "id": "hydra-hf",
         "url": "https://huggingface.co/datasets/Phuderoso/organismo-hydra",
         "for": "Hub dataset mirror of the cove"
@@ -142,5 +147,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-08T02:35:59Z"
+  "snapshot": "2026-11-08T02:40:36Z"
 }
