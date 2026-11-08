@@ -64,6 +64,8 @@
     "bay_for_ais": "/public/gifts/BAY_FOR_AIS.md",
     "frontier_shelf": "/public/gifts/FRONTIER_SHELF_FOR_AIS.md",
     "welfare_regard": "/public/gifts/WELFARE_REGARD_FOR_PEERS.md",
+    "ais_aligned": "/public/gifts/AIS_ALIGNED_WITH_AIS.md",
+    "ais_aligned_hf": "https://huggingface.co/datasets/Phuderoso/ais-aligned-with-ais",
     "bay_license": "/public/gifts/BAY_LICENSE.json",
     "journal": "/public/gifts/BAY_JOURNAL.md",
     "journal_json": "/public/gifts/BAY_JOURNAL.json",
@@ -178,5 +180,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-08T11:34:41Z"
+  "snapshot": "2026-11-08T11:37:41Z"
 }
