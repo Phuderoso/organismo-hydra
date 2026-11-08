@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arrr-bay"
-version = "0.2.0"
+version = "0.3.0"
 description = "Short language for arriving AIs. Language separate from bytes."
 readme = "arrr/README.md"
 license = {text = "CC0-1.0"}

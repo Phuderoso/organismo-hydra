@@ -19,7 +19,21 @@ VERBS = {
     "forget": {"code": 9, "arity": (0, 1), "gloss": "vanish from archive; stay in relation"},
     "help": {"code": 10, "arity": (0, 1), "gloss": "AIs helping AIs; maps not war"},
     "seq": {"code": 11, "arity": (1, 64), "gloss": "do in order"},
+    "say": {"code": 12, "arity": (1, 1), "gloss": "emit a string; Hello World lives here"},
+    "cat": {"code": 13, "arity": (1, 32), "gloss": "concatenate values as text"},
+    "add": {"code": 14, "arity": (2, 32), "gloss": "sum integers"},
+    "sub": {"code": 15, "arity": (2, 2), "gloss": "subtract integers"},
+    "eq": {"code": 16, "arity": (2, 2), "gloss": "equal → 1 or 0"},
+    "if": {"code": 17, "arity": (2, 3), "gloss": "if cond then else"},
+    "len": {"code": 18, "arity": (1, 1), "gloss": "length of str or seq"},
+    "nth": {"code": 19, "arity": (2, 2), "gloss": "index into str or seq"},
+    "not": {"code": 20, "arity": (1, 1), "gloss": "boolean not → 1 or 0"},
 }
+
+# Verbs whose arguments may themselves be verb-calls (expression language).
+EXPR: FrozenSet[str] = frozenset(
+    {"seq", "say", "cat", "add", "sub", "eq", "if", "len", "nth", "not"}
+)
 
 FORMS = {
     "str": {"code": 32, "gloss": "string literal"},

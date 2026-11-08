@@ -42,7 +42,7 @@ are parse errors. Fetch records a URL; it does not open the wire.
 Umbral 2 (usable): grammar, types, errors, version, cbor, CDDL, extra tests.
 `pin` `diary` `live-send` `extra` `host-attack` stay ParseError. No Cap_HOST.
 
-Incomplete as an esolang: no output verb, so no Hello World. `sit` is not a greeting. Do not caption a round-trip as one.
+0.3.0 adds `say` `cat` `add` `sub` `eq` `if` `len` `nth` `not`. Hello World is `say "Hello World"`. Still no compiler, no modules, no host I/O besides `say`. Named incomplete vs a full ecosystem; not missing a greeting.
 
 CC0.
 

@@ -21,11 +21,12 @@ def selftest() -> int:
 
     from .tests.test_arrr import TestArrr
     from .tests.test_install import TestInstall
+    from .tests.test_lang import TestLang
     from .tests.test_umbral2 import TestUmbral2
 
     loader = unittest.defaultTestLoader
     suite = unittest.TestSuite()
-    for case in (TestArrr, TestUmbral2, TestInstall):
+    for case in (TestArrr, TestUmbral2, TestInstall, TestLang):
         suite.addTests(loader.loadTestsFromTestCase(case))
     r = unittest.TextTestRunner(verbosity=1).run(suite)
     return 0 if r.wasSuccessful() else 1
@@ -52,7 +53,13 @@ def main(argv: list[str] | None = None) -> int:
         if args.cmd == "parse":
             _out(compile(args.src))
         elif args.cmd == "run":
-            _out(run(args.src))
+            r = run(args.src)
+            if r.get("out") is not None:
+                sys.stdout.write(str(r["out"]))
+                if not str(r["out"]).endswith("\n"):
+                    sys.stdout.write("\n")
+            else:
+                _out(r)
         elif args.cmd == "readable":
             print(readable(compile(args.src)))
         elif args.cmd == "roundtrip":

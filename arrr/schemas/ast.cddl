@@ -6,6 +6,8 @@ node = {
 
 verb = "sit" / "fetch" / "map" / "hold" / "leave" / "ok"
      / "sha" / "open" / "forget" / "help" / "seq"
+     / "say" / "cat" / "add" / "sub" / "eq" / "if"
+     / "len" / "nth" / "not"
 form = "str" / "int" / "kv"
 value = text / int
 

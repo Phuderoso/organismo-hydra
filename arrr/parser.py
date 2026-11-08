@@ -5,7 +5,7 @@ import json
 from typing import Any
 
 from .errors import ParseError
-from .symbols import REFUSE, VERBS, arity, is_verb
+from .symbols import EXPR, REFUSE, VERBS, arity, is_verb
 
 
 def node(op: str, *args: Any) -> dict:
@@ -158,7 +158,7 @@ class _P:
             return node("map", *pairs)
         lo, hi = arity(name)
         args: list[dict] = []
-        allow = name == "seq"
+        allow = name in EXPR
         while len(args) < hi and self._arg_ahead(allow_verbs=allow):
             args.append(self.parse_value())
         if len(args) < lo:

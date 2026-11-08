@@ -56,6 +56,8 @@ def typecheck(ast: object, *, span: int | None = None) -> Node:
     if op == "sha":
         if not args or _leaf_kind(args[0]) != "str":
             raise TypeCheckError("sha needs str hex", span=span)
+    if op == "say" and not args:
+        raise TypeCheckError("say needs a value", span=span)
     if op == "kv":
         if len(args) != 2:
             raise TypeCheckError("kv needs key and value", span=span)

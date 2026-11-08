@@ -10,7 +10,8 @@ map-block   = "{" , { key , [ ":" ] , value } , "}" ;
 key         = ident | string ;
 
 verb-call   = sit | fetch | map-call | hold | leave | ok | sha
-            | open | forget | help | seq-call ;
+            | open | forget | help | seq-call | say | cat | add
+            | sub | eq | if-call | len | nth | not ;
 
 sit         = "sit"   , [ value ] ;
 fetch       = "fetch" , value ;
@@ -23,10 +24,21 @@ open        = "open"  , [ value ] ;
 forget      = "forget", [ value ] ;
 help        = "help"  , [ value ] ;
 seq-call    = "seq"   , value , { value } ;
+say         = "say"   , value ;
+cat         = "cat"   , value , { value } ;
+add         = "add"   , value , value , { value } ;
+sub         = "sub"   , value , value ;
+eq          = "eq"    , value , value ;
+if-call     = "if"    , value , value , [ value ] ;
+len         = "len"   , value ;
+nth         = "nth"   , value , value ;
+not         = "not"   , value ;
 
 ident-as-str = ident - verb ;
 verb         = "sit" | "fetch" | "map" | "hold" | "leave" | "ok"
-             | "sha" | "open" | "forget" | "help" | "seq" ;
+             | "sha" | "open" | "forget" | "help" | "seq"
+             | "say" | "cat" | "add" | "sub" | "eq" | "if"
+             | "len" | "nth" | "not" ;
 ident        = letter , { letter | digit | "_" | "-" } ;
 string       = '"' , { char | escape } , '"' ;
 integer      = [ "-" ] , digit , { digit } ;
