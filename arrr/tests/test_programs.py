@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from arrr.core import compile, decode, encode, roundtrip, run
+from arrr.core import compile, decode, encode, readable, roundtrip, run
 from arrr.errors import OverflowErr, ParseError, SemError
 from arrr.limits import MAX_TIMES
 from arrr.symbols import NAME_TO_CODE
@@ -39,6 +39,27 @@ class TestPrograms(unittest.TestCase):
         src = (EX / "pocket.bt1").read_text(encoding="utf-8")
         r = run(src)
         self.assertEqual(r["out"], "Hello World\ntwelve\ntick\ntick\nkept")
+
+    def test_pocket_roundtrip_all_codecs(self):
+        """94ad269: render dropped parens around map, so every codec failed.
+
+        readable contained: get map "door" "twelve" "door"
+        roundtrip pack/json/cbor raised ParseError: get needs 2 arg(s), got 1.
+        run() on that same source still returned the Hello World line.
+        """
+        src = (EX / "pocket.bt1").read_text(encoding="utf-8")
+        ast = compile(src)
+        text = readable(ast)
+        self.assertNotIn('get map "door" "twelve" "door"', text)
+        self.assertIn('(map "door" "twelve")', text)
+        self.assertEqual(compile(text), ast)
+        with self.assertRaises(ParseError):
+            compile('say get map "door" "twelve" "door"')
+        for codec in ("pack", "json", "cbor"):
+            rt = roundtrip(src, codec=codec)
+            self.assertTrue(rt["ok"], codec)
+            self.assertEqual(decode(encode(ast, codec), codec), ast)
+            self.assertEqual(run(rt["readable"])["out"], "Hello World\ntwelve\ntick\ntick\nkept")
 
     def test_list_is_not_seq(self):
         ast = compile('["a" "b" "c"]')

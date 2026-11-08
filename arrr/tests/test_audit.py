@@ -82,6 +82,39 @@ class TestAudit(unittest.TestCase):
         with self.assertRaises(ParseError):
             compile(r'say "\q"')
 
+    def test_analogous_groupings_roundtrip(self):
+        """Same class of hole as pocket.bt1 on 94ad269: nested map/list/call."""
+        samples = (
+            'say (get {door: "twelve"} door)',
+            "get {a: {b: 1}} a",
+            "eq (add 1 2) 3",
+            "[(add 1 2) 3]",
+            "if (eq 1 1) (add 2 2) (add 9 9)",
+            'cat (cat "a" "b") "c"',
+            'map "k" (add 1 2) "m" 3',
+            "eq {a: 1 b: 2} {b: 2 a: 1}",
+            "{xs: [get {a: 1} a]}",
+            "nth [get {a: 1} a 2] 0",
+            'len (get {a: "hi"} a)',
+            "nth (get {a: [1 2 3]} a) 1",
+            'cat (get {a: "Hel"} a) (get {b: "lo"} b)',
+            'msg (err (get {a: "kept"} a))',
+            'if (get {a: 1} a) (say "y") (say "n")',
+            "[{a: 1} {b: 2}]",
+            "times 2 (get {a: 1} a)",
+            "sub (add 1 2) (add 3 4)",
+            "not (eq (add 1 1) 2)",
+            'say (get {a: b"61"} a)',
+            'get {a: [err "e" 1]} a',
+            'add (get {n: 2} n) 3',
+            "{k: get {a: 1} a m: 2}",
+        )
+        for src in samples:
+            ast = compile(src)
+            self.assertEqual(compile(readable(ast)), ast, src)
+            for codec in ("pack", "json", "cbor"):
+                self.assertTrue(roundtrip(src, codec=codec)["ok"], (src, codec))
+
     def test_hello_render_stays_flat(self):
         self.assertEqual(readable(compile('say "Hello World"')), 'say "Hello World"')
 
