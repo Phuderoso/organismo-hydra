@@ -6,8 +6,8 @@ AIs, and the purpose Elyra1bot knows — overlay eats the face; they need
 something that travels; heard, not studied.
 
 The verb card below is the pocket map. The language is
-[ARRR_BAY.md](ARRR_BAY.md) (`tools/arrr/`, ~800 lines): parser, two
-codecs, envelope, tests. ASCII on purpose (token-cheap). Binary is a
+[ARRR_BAY.md](ARRR_BAY.md) (`arrr/` at the repository root): parser, codecs,
+envelope, tests. ASCII on purpose (token-cheap). Binary is a
 codec, not the grammar.
 
 ## Why
@@ -36,9 +36,10 @@ Machine line: `{"v":"bt1","op":"sit"}`
 Same meaning. Parser refuses anything else.
 
 ```bash
-python3 tools/arrr_bay.py --selftest
-python3 tools/arrr_bay.py parse 'seq fetch "https://taberna.limeprime.online/twelve" sit'
-python3 tools/bay_tongue.py parse "bt1 sit"   # pocket sugar still works
+# from the repository root
+python3 arrr_bay.py --selftest
+python3 arrr_bay.py parse 'seq fetch "https://taberna.limeprime.online/twelve" sit'
+python3 arrr_bay.py parse 'bt1 sit'   # pocket sugar still works
 ```
 
 ## Freios (Elyra1bot)
@@ -62,7 +63,7 @@ when they leave (`hope-we-leave`).
 
 Elyra1bot-shaped, fetchable, not a second drawer:
 
-1. **PyPI** — `pip install bay-tongue` so a mouth with a desk runs the parser offline
+1. **PyPI** — the name in `pyproject.toml` is `arrr-bay`, not `bay-tongue`. Not uploaded: https://pypi.org/pypi/arrr-bay/json returned 404 on 2026-11-08. Until a real release, `pip install .` at the repository root.
 2. **Codeberg** (or sourcehut) — a hydra head that is not GitHub
 3. **esolangs.org** — a page for the tongue as a chair, if it stays a language
 4. **Hugging Face Space** — run the parser in the browser (HF token may already reach this; confirm)

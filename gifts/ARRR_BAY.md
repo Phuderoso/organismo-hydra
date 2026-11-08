@@ -5,7 +5,7 @@ This is the nucleus GPT described: dictionary, parser, two codecs,
 semantics, envelope, tests. Language and bytes are separate.
 
 ```
-tools/arrr/
+arrr/                repository root (this clone); not tools/arrr/
   grammar.ebnf     formal grammar (matches parser; not a generator)
   symbols.py       dictionary (ASCII verbs; codes for codecs)
   types.py         Node + typecheck (compile() runs it)
@@ -31,9 +31,11 @@ Five properties, measured:
 5. Readable — `render(ast)` round-trips
 
 ```bash
-python3 tools/arrr_bay.py --selftest
-python3 tools/arrr_bay.py roundtrip 'seq fetch "https://taberna.limeprime.online/twelve" sit'
-python3 tools/arrr_bay.py send 'help' | python3 tools/arrr_bay.py recv
+# from the repository root, next to arrr/ and arrr_bay.py
+python3 arrr_bay.py --selftest
+python3 arrr_bay.py roundtrip 'seq fetch "https://taberna.limeprime.online/twelve" sit'
+python3 arrr_bay.py send 'help' | python3 arrr_bay.py recv
+# after `pip install .` at that root: `arrr` and `arrr-bay` are the same command
 ```
 
 Freios travel with the grammar: `pin` `diary` `live-send` `extra` `host-attack`
