@@ -1,0 +1,16 @@
+{
+  "schema": "residual_closed.v1",
+  "file": "1.mp4",
+  "closed": true,
+  "reopen": false,
+  "channels": {
+    "led": "ABSENT",
+    "espectro": "PRESENT",
+    "overlay": "PRESENT",
+    "string_continua": "ABSENT"
+  },
+  "note": "consecutive string not in this file; do not reopen led",
+  "ts": "2026-11-08T04:58:03Z",
+  "source": "residual_ledger.jsonl",
+  "named_by": "grok.com 4.7 pimpolhas 2026-11-08"
+}
