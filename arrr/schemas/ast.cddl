@@ -1,0 +1,12 @@
+; Arrr-bay AST. Language, not bytes.
+node = {
+  "op": verb / form,
+  "args": [* node / value]
+}
+
+verb = "sit" / "fetch" / "map" / "hold" / "leave" / "ok"
+     / "sha" / "open" / "forget" / "help" / "seq"
+form = "str" / "int" / "kv"
+value = text / int
+
+; refuse (pin diary live-send extra host-attack) is not a node.

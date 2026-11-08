@@ -5,6 +5,8 @@ import json
 import struct
 from typing import Callable
 
+from .codecs.cbor import dumps_cbor
+from .errors import CodecError
 from .symbols import LANG, MAGIC, NAME_TO_CODE
 
 Codec = Callable[[dict], bytes]
@@ -37,7 +39,7 @@ def dumps_pack(ast: dict) -> bytes:
             return b"\x21" + _uvar(zz)
         code = NAME_TO_CODE.get(op)
         if code is None:
-            raise ValueError(f"unknown op {op}")
+            raise CodecError(f"unknown op {op}")
         body = b"".join(enc(a) if isinstance(a, dict) else enc({"op": "str", "args": [a]}) for a in args)
         return bytes([code]) + _uvar(len(args)) + body
 
@@ -52,10 +54,11 @@ def dumps_json(ast: dict) -> bytes:
 CODECS: dict[str, Codec] = {
     "pack": dumps_pack,
     "json": dumps_json,
+    "cbor": dumps_cbor,
 }
 
 
 def dumps(ast: dict, codec: str = "pack") -> bytes:
     if codec not in CODECS:
-        raise ValueError(f"unknown codec {codec}; have {sorted(CODECS)}")
+        raise CodecError(f"unknown codec {codec}; have {sorted(CODECS)}")
     return CODECS[codec](ast)

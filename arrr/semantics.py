@@ -4,14 +4,11 @@ from __future__ import annotations
 import re
 from typing import Any
 
+from .errors import SemError
 from .symbols import REFUSE, VERBS
 
 _SHA = re.compile(r"^[0-9a-fA-F]{32,128}$")
 _URL = re.compile(r"^https?://")
-
-
-class SemError(ValueError):
-    pass
 
 
 def _s(n: dict) -> Any:

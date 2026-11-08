@@ -1,0 +1,8 @@
+; Structured error. Same shape in JSON or CBOR.
+error = {
+  "code": 1..7,           ; ErrorCode
+  "name": text,           ; E_PARSE / E_TYPE / E_VERSION / E_OVERFLOW / E_DECODE / E_SEM / E_CODEC
+  "msg": text,
+  "span": int / null,     ; byte offset in source, if known
+  "detail": { * text => any }
+}

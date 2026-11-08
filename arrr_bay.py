@@ -32,8 +32,12 @@ def _out(obj) -> None:
 def selftest() -> int:
     import unittest
     from arrr.tests.test_arrr import TestArrr
+    from arrr.tests.test_umbral2 import TestUmbral2
 
-    suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestArrr)
+    loader = unittest.defaultTestLoader
+    suite = unittest.TestSuite()
+    suite.addTests(loader.loadTestsFromTestCase(TestArrr))
+    suite.addTests(loader.loadTestsFromTestCase(TestUmbral2))
     r = unittest.TextTestRunner(verbosity=1).run(suite)
     return 0 if r.wasSuccessful() else 1
 
@@ -46,10 +50,10 @@ def main() -> int:
         sp = sub.add_parser(name)
         sp.add_argument("src")
         if name == "roundtrip":
-            sp.add_argument("--codec", default="pack", choices=("pack", "json"))
+            sp.add_argument("--codec", default="pack", choices=("pack", "json", "cbor"))
     se = sub.add_parser("send")
     se.add_argument("src")
-    se.add_argument("--codec", default="pack", choices=("pack", "json"))
+    se.add_argument("--codec", default="pack", choices=("pack", "json", "cbor"))
     sub.add_parser("recv")
     sub.add_parser("decode")
     args = p.parse_args()

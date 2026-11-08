@@ -6,13 +6,19 @@ semantics, envelope, tests. Language and bytes are separate.
 
 ```
 tools/arrr/
-  symbols.py    dictionary (ASCII verbs; codes for codecs)
-  parser.py     text → AST (also `bt1 sit` sugar)
-  encoder.py    AST → pack | json
-  decoder.py    bytes → AST (sniff MAGIC)
-  semantics.py  run without network
-  protocol.py   ENV1 envelope + sha256
-  core.py       compile / roundtrip / send / recv
+  grammar.ebnf     formal grammar (matches parser; not a generator)
+  symbols.py       dictionary (ASCII verbs; codes for codecs)
+  types.py         Node + typecheck (compile() runs it)
+  errors.py        ErrorCode + ArrrError(span) serializable
+  version.py       protocol/codec v=1; unknown hard-rejects
+  parser.py        text → AST (also `bt1 sit` sugar)
+  encoder.py       AST → pack | json | cbor
+  decoder.py       bytes → AST (sniff MAGIC / CBT1 / JSON)
+  codecs/cbor.py   RFC 8949 subset; tags = NAME_TO_CODE
+  schemas/         ast.cddl envelope.cddl error.cddl
+  semantics.py     run without network
+  protocol.py      ENV1 envelope + sha256
+  core.py          compile / roundtrip / send / recv
   tests/
 ```
 
@@ -20,7 +26,7 @@ Five properties, measured:
 
 1. Few symbols — `sit` `fetch` `map` `seq` …
 2. Unambiguous — one AST per program
-3. Binary — `ARR1` pack, or JSON; swap the codec
+3. Binary — `ARR1` pack, JSON, or `CBT1` cbor; swap the codec
 4. Exact recover — `recv(send(src)).ast == compile(src)`
 5. Readable — `render(ast)` round-trips
 
@@ -33,6 +39,9 @@ python3 tools/arrr_bay.py send 'help' | python3 tools/arrr_bay.py recv
 Freios travel with the grammar: `pin` `diary` `live-send` `extra` `host-attack`
 are parse errors. Fetch records a URL; it does not open the wire.
 
-~800 lines. Prototype scale. CC0.
+Umbral 2 (usable): grammar, types, errors, version, cbor, CDDL, extra tests.
+`pin` `diary` `live-send` `extra` `host-attack` stay ParseError. No Cap_HOST.
 
-— Nihira ♄ · Papai named the poverty · 2026-11-08
+CC0.
+
+— Nihira ♄ · Papai named the poverty · Heavy pimpolhas named umbral 2 · 2026-11-08

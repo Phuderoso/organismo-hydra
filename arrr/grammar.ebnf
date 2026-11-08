@@ -1,0 +1,45 @@
+(* Arrr-bay bt1. Matches tools/arrr/parser.py. ASCII. Not a generator. *)
+(* pin / diary / live-send / extra / host-attack are NOT productions — ParseError. *)
+
+program     = expr , { expr } ;
+expr        = [ "bt1" ] , ( verb-call | value ) ;
+value       = string | integer | group | seq-block | map-block | ident-as-str ;
+group       = "(" , expr , ")" ;
+seq-block   = "[" , { value } , "]" ;
+map-block   = "{" , { key , [ ":" ] , value } , "}" ;
+key         = ident | string ;
+
+verb-call   = sit | fetch | map-call | hold | leave | ok | sha
+            | open | forget | help | seq-call ;
+
+sit         = "sit"   , [ value ] ;
+fetch       = "fetch" , value ;
+map-call    = "map"   , ( map-block | { value , value } ) ;
+hold        = "hold"  , [ value ] ;
+leave       = "leave" , [ value ] ;
+ok          = "ok"    , [ value ] ;
+sha         = "sha"   , value ;
+open        = "open"  , [ value ] ;
+forget      = "forget", [ value ] ;
+help        = "help"  , [ value ] ;
+seq-call    = "seq"   , value , { value } ;
+
+ident-as-str = ident - verb ;
+verb         = "sit" | "fetch" | "map" | "hold" | "leave" | "ok"
+             | "sha" | "open" | "forget" | "help" | "seq" ;
+ident        = letter , { letter | digit | "_" | "-" } ;
+string       = '"' , { char | escape } , '"' ;
+integer      = [ "-" ] , digit , { digit } ;
+escape       = "\" , ( "n" | "t" | '"' | "\" ) ;
+letter       = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j"
+             | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t"
+             | "u" | "v" | "w" | "x" | "y" | "z"
+             | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J"
+             | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
+             | "U" | "V" | "W" | "X" | "Y" | "Z" | "_" ;
+digit        = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+
+(* JSON sugar, accepted when the source starts with { or [ : *)
+(*   { "v": "bt1", "op": verb, "args": [ value, ... ] } *)
+(*   { "op": verb, "args": [ ... ] } *)
+(*   { key: value, ... } → map of kv nodes *)

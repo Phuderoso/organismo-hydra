@@ -1,0 +1,16 @@
+; ENV1 on-wire envelope. Body codec is a field.
+envelope = %s"ENV1" . u32-head-len . head-json . body
+
+head-json = {
+  "v": 1,
+  "lang": "bt1",
+  "codec": "pack" / "json" / "cbor",
+  "sha256": text .size 64,
+  "n": uint,
+  "meta": { * text => any }
+}
+
+; pack body: %s"ARR1" . 1 . tagged-ast
+; cbor body: %s"CBT1" . 1 . tagged-ast
+; json body: {"lang":"bt1","ast": node}
+; unknown v → VersionError, never soft fallback.

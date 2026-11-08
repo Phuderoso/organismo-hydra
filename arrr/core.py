@@ -3,13 +3,15 @@ from __future__ import annotations
 
 from .decoder import loads
 from .encoder import CODECS, dumps
-from .parser import ParseError, parse, render
+from .errors import ParseError, SemError
+from .parser import parse, render
 from .protocol import recover, unwrap, wrap
-from .semantics import SemError, eval_ast
+from .semantics import eval_ast
+from .types import typecheck
 
 
 def compile(src: str) -> dict:
-    return parse(src)
+    return typecheck(parse(src))
 
 
 def encode(ast: dict, codec: str = "pack") -> bytes:
@@ -25,11 +27,11 @@ def readable(ast: dict) -> str:
 
 
 def roundtrip(src: str, codec: str = "pack") -> dict:
-    ast = parse(src)
+    ast = compile(src)
     blob = dumps(ast, codec=codec)
     back = loads(blob, codec=codec)
     text = render(back)
-    again = parse(text)
+    again = compile(text)
     return {
         "ok": back == ast == again,
         "ast": ast,
@@ -41,11 +43,11 @@ def roundtrip(src: str, codec: str = "pack") -> dict:
 
 
 def run(src: str) -> dict:
-    return eval_ast(parse(src))
+    return eval_ast(compile(src))
 
 
 def send(src: str, codec: str = "pack", meta: dict | None = None) -> bytes:
-    return wrap(parse(src), codec=codec, meta=meta)
+    return wrap(compile(src), codec=codec, meta=meta)
 
 
 def recv(blob: bytes) -> dict:

@@ -3,11 +3,9 @@ from __future__ import annotations
 
 import json
 
+from .errors import DecodeError, OverflowErr
 from .symbols import CODE_TO_NAME, MAGIC
-
-
-class DecodeError(ValueError):
-    pass
+from .version import check_codec
 
 
 def _uvar(buf: bytes, i: int) -> tuple[int, int]:
@@ -21,7 +19,7 @@ def _uvar(buf: bytes, i: int) -> tuple[int, int]:
             return n, i
         shift += 7
         if shift > 63:
-            raise DecodeError("varint too long")
+            raise OverflowErr("varint too long")
     raise DecodeError("truncated varint")
 
 
@@ -33,8 +31,7 @@ def loads_pack(blob: bytes) -> dict:
         raise DecodeError("truncated version")
     ver = blob[i]
     i += 1
-    if ver != 1:
-        raise DecodeError(f"unsupported version {ver}")
+    check_codec(ver, where="pack")
 
     def dec(j: int) -> tuple[dict, int]:
         if j >= len(blob):
@@ -79,6 +76,8 @@ def loads_json(blob: bytes) -> dict:
 def sniff(blob: bytes) -> str:
     if blob.startswith(MAGIC):
         return "pack"
+    if blob.startswith(b"CBT1"):
+        return "cbor"
     if blob.lstrip().startswith(b"{") or blob.lstrip().startswith(b"["):
         return "json"
     raise DecodeError("cannot sniff codec")
@@ -90,4 +89,8 @@ def loads(blob: bytes, codec: str | None = None) -> dict:
         return loads_pack(blob)
     if kind == "json":
         return loads_json(blob)
+    if kind == "cbor":
+        from .codecs.cbor import loads_cbor
+
+        return loads_cbor(blob)
     raise DecodeError(f"unknown codec {kind}")

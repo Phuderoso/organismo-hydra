@@ -4,11 +4,8 @@ from __future__ import annotations
 import json
 from typing import Any
 
+from .errors import ParseError
 from .symbols import REFUSE, VERBS, arity, is_verb
-
-
-class ParseError(ValueError):
-    pass
 
 
 def node(op: str, *args: Any) -> dict:
@@ -45,7 +42,7 @@ def tokenize(src: str) -> list[_Tok]:
                 d = s[j]
                 if d == "\\":
                     if j + 1 >= n:
-                        raise ParseError(f"unterminated escape at {i}")
+                        raise ParseError(f"unterminated escape at {i}", span=i)
                     esc = s[j + 1]
                     buf.append({"n": "\n", "t": "\t", '"': '"', "\\": "\\"}.get(esc, esc))
                     j += 2
@@ -57,7 +54,7 @@ def tokenize(src: str) -> list[_Tok]:
                 buf.append(d)
                 j += 1
             else:
-                raise ParseError(f"unterminated string at {i}")
+                raise ParseError(f"unterminated string at {i}", span=i)
             continue
         if c.isdigit() or (c == "-" and i + 1 < n and s[i + 1].isdigit()):
             j = i + 1 if c == "-" else i
@@ -73,7 +70,7 @@ def tokenize(src: str) -> list[_Tok]:
             out.append(_Tok("id", s[i:j], i))
             i = j
             continue
-        raise ParseError(f"unexpected {c!r} at {i}")
+        raise ParseError(f"unexpected {c!r} at {i}", span=i)
     out.append(_Tok("eof", None, n))
     return out
 
@@ -89,7 +86,7 @@ class _P:
     def eat(self, kind: str | None = None) -> _Tok:
         t = self.peek()
         if kind and t.kind != kind:
-            raise ParseError(f"expected {kind} got {t.kind} at {t.pos}")
+            raise ParseError(f"expected {kind} got {t.kind} at {t.pos}", span=t.pos)
         self.i += 1
         return t
 
@@ -117,7 +114,7 @@ class _P:
             return self.parse_map_block()
         if t.kind == "id":
             return self.parse_expr()
-        raise ParseError(f"expected value at {t.pos}")
+        raise ParseError(f"expected value at {t.pos}", span=t.pos)
 
     def parse_map_block(self) -> dict:
         self.eat("{")
@@ -125,7 +122,7 @@ class _P:
         while self.peek().kind not in ("}", "eof"):
             k = self.eat()
             if k.kind not in ("id", "str"):
-                raise ParseError(f"map key at {k.pos}")
+                raise ParseError(f"map key at {k.pos}", span=k.pos)
             if self.peek().kind == ":":
                 self.eat()
             val = self.parse_value()
@@ -142,7 +139,7 @@ class _P:
             self.eat()
             if self.peek().kind == "id":
                 return self.parse_expr()
-            raise ParseError("bt1 needs a verb")
+            raise ParseError("bt1 needs a verb", span=self.peek().pos)
         self.eat()
         if not is_verb(name):
             # bare ident as string key/word
@@ -165,7 +162,7 @@ class _P:
         while len(args) < hi and self._arg_ahead(allow_verbs=allow):
             args.append(self.parse_value())
         if len(args) < lo:
-            raise ParseError(f"{name} needs {lo} arg(s), got {len(args)}")
+            raise ParseError(f"{name} needs {lo} arg(s), got {len(args)}", span=t.pos)
         return node(name, *args)
 
     def _arg_ahead(self, allow_verbs: bool = False) -> bool:
@@ -180,7 +177,7 @@ class _P:
 def parse(src: str) -> dict:
     raw = (src or "").strip()
     if not raw:
-        raise ParseError("empty")
+        raise ParseError("empty", span=0)
     if raw[0] in "{[":
         try:
             obj = json.loads(raw)
@@ -189,7 +186,7 @@ def parse(src: str) -> dict:
         if isinstance(obj, dict) and obj.get("v") == "bt1" and "op" in obj:
             op = str(obj["op"])
             if op in REFUSE:
-                raise ParseError(f"refused {op}")
+                raise ParseError(f"refused {op}", span=0)
             args = obj.get("args") or []
             if not isinstance(args, list):
                 args = [args]
@@ -231,9 +228,9 @@ def _from_json(obj: Any) -> dict:
 def _check_refuse(n: dict) -> None:
     op = n.get("op")
     if op in REFUSE:
-        raise ParseError(f"refused {op}")
+        raise ParseError(f"refused {op}", span=0)
     if op == "str" and n["args"] and str(n["args"][0]).lower() in REFUSE:
-        raise ParseError(f"refused {n['args'][0]}")
+        raise ParseError(f"refused {n['args'][0]}", span=0)
     for a in n.get("args") or []:
         if isinstance(a, dict):
             _check_refuse(a)

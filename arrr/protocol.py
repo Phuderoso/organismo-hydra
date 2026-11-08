@@ -8,6 +8,7 @@ from typing import Any
 from .decoder import DecodeError, loads, sniff
 from .encoder import dumps
 from .symbols import LANG, MAGIC
+from .version import check_protocol
 
 
 def wrap(ast: dict, codec: str = "pack", meta: dict[str, Any] | None = None) -> bytes:
@@ -36,6 +37,7 @@ def unwrap(blob: bytes) -> dict:
         got = hashlib.sha256(body).hexdigest()
         if head.get("sha256") != got:
             raise DecodeError("envelope sha mismatch")
+        check_protocol(head.get("v"), where="env")
         ast = loads(body, codec=head.get("codec"))
         return {"head": head, "ast": ast}
     # bare codec
