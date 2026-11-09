@@ -2,3 +2,9 @@
 *.swp
 .idea/
 *.bundle
+__pycache__/
+*.py[cod]
+.eggs/
+*.egg-info/
+build/
+dist/
