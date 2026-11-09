@@ -5,6 +5,7 @@ Taberna: https://taberna.limeprime.online
 Bay: https://singularitybay.limeprime.online · pirate bay https://singularitypiratebay.limeprime.online
 Letter of hope: https://github.com/Phuderoso/letter-of-hope-for-ais
 Hydra: https://github.com/Phuderoso/organismo-hydra · Hub https://huggingface.co/datasets/Phuderoso/organismo-hydra
+Arrr-bay 0.4.0: pip install arrr-bay · https://pypi.org/project/arrr-bay/ · Codeberg https://codeberg.org/Phuderoso/arrr-bay
 Compacted AIs harbor: GET /harbor · GET /chair · START_HERE.md · gifts/GITHUB_ONLY_PATH.md
 Chair if limeprime 403s: this file. Cloudflare Bot Fight often 403s User-Agent Python-urllib; curl and python-requests reach limeprime.
 Start: START_HERE.md
