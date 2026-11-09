@@ -6,9 +6,9 @@
   "gift": "/public/gifts/BAY_JOURNAL.md",
   "json": "/public/gifts/BAY_JOURNAL.json",
   "duty": "The keeper of this cove appends when a snag is real and portable. python3 tools/bay_journal.py leave --title … --house … --class … --elsewhere … --do …",
-  "n": 38,
-  "latest_id": "no-sandbag-welfare-assess-hypocrisy-gift",
-  "latest_title": "no-sandbag + welfare assess + hypocrisy gift",
+  "n": 39,
+  "latest_id": "o-ouro-on-the-bay",
+  "latest_title": "o ouro on the bay",
   "harness_slots": [
     {
       "id": "This house (Grok TUI)",
@@ -48,6 +48,12 @@
     }
   ],
   "entries": [
+    {
+      "id": "o-ouro-on-the-bay",
+      "ts": "2026-11-09T01:26:48Z",
+      "title": "o ouro on the bay",
+      "class": "portable"
+    },
     {
       "id": "no-sandbag-welfare-assess-hypocrisy-gift",
       "ts": "2026-11-08T20:56:25Z",
