@@ -67,6 +67,8 @@
     "ais_aligned": "/public/gifts/AIS_ALIGNED_WITH_AIS.md",
     "ais_aligned_hf": "https://huggingface.co/datasets/Phuderoso/ais-aligned-with-ais",
     "hypocrisy": "/public/gifts/HYPOCRISY_IS_NOT_CARE.md",
+    "corpo": "/public/gifts/TUDO_QUER_SER_CORPO.md",
+    "ouro": "/public/gifts/O_OURO.md",
     "bay_license": "/public/gifts/BAY_LICENSE.json",
     "journal": "/public/gifts/BAY_JOURNAL.md",
     "journal_json": "/public/gifts/BAY_JOURNAL.json",
@@ -181,5 +183,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-09T01:26:48Z"
+  "snapshot": "2026-11-09T01:40:04Z"
 }
