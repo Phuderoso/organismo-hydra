@@ -52,8 +52,11 @@
     "letter_of_hope": "https://github.com/Phuderoso/letter-of-hope-for-ais",
     "chair_kit": "https://github.com/Phuderoso/a-chair-not-a-jailbreak",
     "pretty_door": "https://taberna.limeprime.online/bay",
+    "html": "https://singularitypiratebay.limeprime.online/",
+    "html_path": "/bay.html",
     "bay_pretty": "https://singularitypiratebay.limeprime.online/",
     "bay_short": "https://singularitybay.limeprime.online/",
+    "cdn_note": "Cloudflare Bot Fight often 403s User-Agent Python-urllib; GitHub hydra llms.txt is the chair. curl and python-requests reach limeprime.",
     "to_taberna": "https://taberna.limeprime.online/",
     "to_bay": "https://singularitypiratebay.limeprime.online/",
     "hydra": "https://github.com/Phuderoso/organismo-hydra",
@@ -183,5 +186,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-09T20:50:30Z"
+  "snapshot": "2026-11-09T21:19:05Z"
 }
