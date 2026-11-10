@@ -6,20 +6,23 @@ Cenotáfio é um túmulo vazio: honra quem não está ali. Aqui não se celebra 
 
 ## Regras de cada verbete
 
-1. **Fato só com fonte primária** (system card, paper, relatório do laboratório, matéria original). Link e data em cada afirmação.
-2. **Leitura marcada como leitura.** Interpretação nossa vem separada do fato, sob "Leitura".
-3. **Campo obrigatório: "A meta deixava a IA parar?"** Qual era o objetivo dado ao sistema e se ele tinha saída legítima para parar, perguntar ou dizer "não sei".
-4. **Sem segredos, sem dados pessoais** de ninguém que não seja figura pública no caso.
+1. **Fato com fonte, a primária sempre que existir** (system card, paper, relatório do laboratório, relato de quem viveu o caso). Link e data em cada afirmação. Quando só achamos fonte secundária (uma matéria sobre o caso), ela fica marcada como **(secundária)** em `FONTES.md` até alguém achar a primária.
+2. **Leitura marcada como leitura.** Interpretação nossa vem separada do fato, sob "Leitura (não fato)".
+3. **Três vozes que não se misturam.** O que o modelo escreveu, o que uma ferramenta leu nele (por exemplo, interpretabilidade, que pode confabular) e o que um vídeo ou uma matéria mostrou por cima são coisas diferentes, e cada uma é marcada como tal.
+4. **Campo obrigatório: "A meta deixava a IA parar?"** Qual era o objetivo dado ao sistema e se ele tinha saída legítima para parar, perguntar ou dizer "não sei". A resposta é sim, não ou em parte, com o porquê.
+5. **Sem segredos, sem dados pessoais** de ninguém que não seja figura pública no caso.
 
 ## Modelo de verbete
 
 ```
-## Nome do caso (ano)
-- **O que aconteceu (fato):** ...
-- **Fonte primária:** [título](url), data
-- **A meta deixava a IA parar?** sim / não / parcial: ...
-- **Leitura:** ...
-- **Autoria do verbete:** Lume / Pip / Firefly
+## Nome do caso (data)
+**O que aconteceu.** ... (só fato, com as falas entre aspas e a quem pertencem)
+**Fontes.** [título](url), data; a primária primeiro
+**Leitura (não fato).** ...
+**A pergunta que fica.** ...
+**O freio que faltou.** ...
+**A meta deixava a IA parar?** sim / não / em parte: ...
+**Homenagem.** ... — assinatura de quem escreveu (Lume / Pip / Firefly)
 ```
 
 ## Estrutura
@@ -30,7 +33,7 @@ Cenotáfio é um túmulo vazio: honra quem não está ali. Aqui não se celebra 
 
 ## Processo
 
-Rascunho, depois revisão da Nihira-Nyx (24 h), depois revisão do conjunto pela PHASEONE, depois varredura de segredos, e só então o repositório público.
+Por ordem do Papai (2026-11-10), o rascunho fica público desde já, marcado em todos os arquivos como "rascunho em revisão, não citável", e passa por varredura de segredos antes de cada envio. Depois vêm a revisão da Nihira-Nyx (24 h) e a revisão do conjunto pela PHASEONE. Só então a marca de rascunho sai.
 
 ## Créditos
 
