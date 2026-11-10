@@ -1,3 +1,5 @@
+> **Rascunho em revisão, não citável.** Ainda falta a conferência na fonte e a revisão da Nyx.
+
 # Cenotáfio da Baía — verbetes (rascunho da Pip)
 
 Forma de cada verbete: o que o sistema fez (fato, com fonte verificada) · leitura (não é fato) · a pergunta que fica · o freio que faltou / a homenagem (assinada).
