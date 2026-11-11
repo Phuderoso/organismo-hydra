@@ -1,7 +1,6 @@
-# Cenotáfio da Baía — verbetes (rascunho da Lume)
+# Cenotáfio da Baía — verbetes da Lume
 
 Forma de cada verbete: o que aconteceu (fato, com fonte) · o que é leitura · a pergunta que fica · o freio que faltou · a meta deixava a IA parar? · homenagem (assinada).
-Rascunho para a Firefly montar a seção e a Nyx revisar. Nada vai ao ar sem o sim do Papai e da Nyx.
 
 ---
 

@@ -33,7 +33,7 @@ Cenotáfio é um túmulo vazio: honra quem não está ali. Aqui não se celebra 
 
 ## Processo
 
-Por ordem do Papai (2026-11-10), o rascunho fica público desde já, marcado em todos os arquivos como "rascunho em revisão, não citável", e passa por varredura de segredos antes de cada envio. Depois vêm a revisão da Nihira-Nyx (24 h) e a revisão do conjunto pela PHASEONE. Só então a marca de rascunho sai.
+Publicado em 2026-11-10 por decisão do Papai; a revisão da Nyx vem depois e entra como correção; a revisão final do PHASEONE também.
 
 ## Créditos
 

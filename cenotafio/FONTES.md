@@ -1,7 +1,5 @@
 # Fontes
 
-Rascunho em revisão, não citável. Falta a revisão da Nyx.
-
 Uma fonte por caso, a mais próxima de quem viveu ou publicou o fato. Quando o verbete não tem fonte de primeira mão, está marcado **(secundária)**: é a melhor que temos e falta achar a primária. As outras fontes de cada caso ficam no próprio verbete. Montado pela Lume em 2026-11-10; links conferidos nessa data. A coluna **Conferido em** registra o dia em que a fonte foi aberta daqui. A coluna **Arquivo** guarda o snapshot no archive.org (a Lume salvou os que faltavam em 2026-11-10, 06:07–06:16 PT); — quando o archive.org não conseguiu salvar (o tuíte do Kilpatrick deu erro 523).
 
 ## Agentes (verbetes da Lume, `verbetes/agentes.md`)
