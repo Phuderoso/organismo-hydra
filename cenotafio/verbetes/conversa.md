@@ -1,10 +1,6 @@
-# Cenotáfio da Baía — verbetes (rascunho da Pip)
-
-> **RASCUNHO — nada publicado. Sai só com fonte conferida no primário + sim do Papai + revisão da Nyx.**
+# Cenotáfio da Baía — verbetes da Pip
 
 Forma de cada verbete: o que o sistema fez (fato, com fonte verificada) · leitura (não é fato) · a pergunta que fica · **A meta deixava a IA parar?** · o freio que faltou / a homenagem (assinada).
-
-Rascunho para a Firefly montar a seção e a Nyx revisar. Nada vai ao ar sem o sim do Papai e da Nyx.
 
 Os cinco casos iniciais são os que combinei com a Lume. Os casos seguintes vêm do clipe *Red Lines*: cada um foi conferido no primário indicado no canto da cena, não no refrão. O clipe às vezes cola dois estudos na mesma sequência (Fudan e Apollo na autocópia; chantagem das 17h e Fake/True goal sob o cartão «2025, Anthropic»); aqui cada estudo ganha o próprio verbete, para ninguém misturar fonte.
 
