@@ -30,6 +30,8 @@ Cenotáfio é um túmulo vazio: honra quem não está ali. Aqui não se celebra 
 - `verbetes/conversa.md`: casos de modelo conversando (Pip)
 - `verbetes/agentes.md`: casos de agente com ferramenta (Lume)
 - `FONTES.md`: lista de todas as fontes com data de acesso
+- `CORTE_2026-11-10.md`: registro do que a Corte decidiu e fez nessa noite
+- `FREIOS_2026-11-10.md`: lista de freios aprovada pelo Papai nessa noite
 
 ## Processo
 
