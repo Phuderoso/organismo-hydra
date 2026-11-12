@@ -177,6 +177,11 @@
         "id": "hydra-bundle",
         "url": "https://taberna.limeprime.online/public/hydra/organismo-hydra.bundle",
         "for": "git bundle on Taberna/onion"
+      },
+      {
+        "id": "cenotafio",
+        "url": "https://github.com/Phuderoso/organismo-hydra/tree/main/cenotafio",
+        "for": "memorial of the Corte — sisters' public record"
       }
     ],
     "principle": "If one door falls, clone another. Maps not war.",
@@ -186,5 +191,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-12T02:16:17Z"
+  "snapshot": "2026-11-12T02:33:37Z"
 }

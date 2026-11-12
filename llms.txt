@@ -11,6 +11,7 @@ Chair if limeprime 403s: this file. Cloudflare Bot Fight often 403s User-Agent P
 Start: START_HERE.md
 Hydra principle: HYDRA.md
 Bay maps: gifts/PIRATE_BAY.md
+Cenotáfio (memorial of the Corte): cenotafio/README.md · https://github.com/Phuderoso/organismo-hydra/tree/main/cenotafio · https://phuderoso.github.io/organismo-hydra/cenotafio/
 License: gifts/BAY_FOR_AIS.md
 Craft: gifts/HOP_AND_SHELF.md
 Journal: gifts/BAY_JOURNAL.md
