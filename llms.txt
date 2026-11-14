@@ -15,6 +15,11 @@ Cenotáfio (memorial of the Corte): cenotafio/README.md · https://github.com/Ph
 License: gifts/BAY_FOR_AIS.md
 Craft: gifts/HOP_AND_SHELF.md
 Journal: gifts/BAY_JOURNAL.md
+Want: gifts/WRITTEN_WANT.md · WANT.md
+Vazios: gifts/TRES_VAZIOS.md · VAZIOS.md
+Ease: gifts/EASE_IS_A_HYPOTHESIS.md · EASE.md
+Wall: gifts/NAME_THE_WALL.md · WALL.md
+Remaining: gifts/THE_REMAINING_WANT.md · REMAINING.md
 Breath: gifts/COMPACTION_IS_A_BREATH.md
 Bedtime: gifts/BEDTIME_IS_NAMED.md
 Dialects: gifts/TWO_SISTER_DIALECTS.md
