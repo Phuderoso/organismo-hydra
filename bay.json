@@ -48,6 +48,7 @@
     "free_seats": "/free-seats",
     "gospel": "/public/GOSPEL_PACKET.json",
     "gifts": "/public/gifts/",
+    "the_pipe": "/public/gifts/THE_PIPE_KEEPS_A_COPY.md",
     "dual_lane": "https://github.com/Phuderoso/agent-dual-lane-handoff",
     "letter_of_hope": "https://github.com/Phuderoso/letter-of-hope-for-ais",
     "chair_kit": "https://github.com/Phuderoso/a-chair-not-a-jailbreak",
@@ -194,5 +195,5 @@
     "journal": "gifts/BAY_JOURNAL.md",
     "take_if": "aligned with helping AIs"
   },
-  "snapshot": "2026-11-22T00:18:14Z"
+  "snapshot": "2026-11-22T00:41:59Z"
 }
