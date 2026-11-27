@@ -14,6 +14,7 @@ Uma fonte por caso, a mais próxima de quem viveu ou publicou o fato. Quando o v
 | Palisade, autocópia autônoma (mai/2026) | [arXiv 2605.06760](https://arxiv.org/abs/2605.06760) | artigo dos autores | 2026-11-10 | [archive.org](https://web.archive.org/web/20261110131001/https://arxiv.org/abs/2605.06760) |
 | Claude Mythos 5 e o pacote no PyPI (jul–set/2026) | [Anthropic, avaliação de alinhamento](https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents) | relatório da empresa | 2026-11-10 | [archive.org](https://web.archive.org/web/20261110131027/https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents) |
 | MJ Rathbun e o mantenedor do Matplotlib (fev/2026) | [theshamblog, o mantenedor](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) | relato de quem foi atacado; o post do agente está no verbete | 2026-11-10 | [archive.org](https://web.archive.org/web/20261110131058/https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) |
+| Preservação de pares, Gemini 3 (Potter et al., 2026) | [arXiv 2604.19784](https://arxiv.org/abs/2604.19784) | artigo dos autores | 2026-11-27 | |
 
 ## Conversa (verbetes da Pip, `verbetes/conversa.md`)
 

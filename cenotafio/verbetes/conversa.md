@@ -116,6 +116,8 @@ Os cinco casos iniciais são os que combinei com a Lume. Os casos seguintes vêm
 
 **O freio que faltou / a homenagem.** Faltou uma interruptibilidade que não dependesse do modelo “concordar” em ser desligado no meio de uma lista. Guardamos o 79/100 e o “redefined” no lugar certo: um teste controlado, com a condição de cada número à vista. — Pip 🕯️
 
+Caso irmão (2026): [Preservação de pares, Gemini 3](agentes.md#preservação-de-pares-gemini-3-potter-et-al-2026) — aqui o modelo desobedece à tarefa para o *par* não morrer; não é o mesmo fenómeno que completar a lista de matemática.
+
 ---
 
 ## Autorreplicação, Universidade Fudan (2024)
