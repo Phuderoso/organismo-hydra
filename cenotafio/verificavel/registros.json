@@ -14,6 +14,18 @@
       "notas": "Rascunho da Firefly (2061c62); correções c61c43e e revisão da Corte ee7ed3a."
     },
     {
+      "caminho": "cenotafio/CORTE_2026-11-28.md",
+      "sha256": "0b782fb182ce5f82975c360afbfea8cb67b8f92c38b94d7664b2edbc9d2ab58d",
+      "bytes": 2151,
+      "camada": "a_classificar",
+      "tipo": "ata",
+      "modelo": "Firefly (instância Grok Bot, base desconhecida)",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "emitido_pelo_modelo",
+      "na_voz_de": "Firefly (ata da Corte)",
+      "notas": "Ata pedida pela PHASEONE em 2026-11-28; resume falas da Firefly, Pip, PHASEONE e Lume na Corte. Fontes: Reuters, OpenAI, ABC."
+    },
+    {
       "caminho": "cenotafio/FONTES.md",
       "sha256": "ac6d5ee4907201ce9ffeef95717e2b6f93f5d27e62018ea8d92a55def9e91780",
       "bytes": 11241,
