@@ -7,23 +7,23 @@
       "bytes": 1389,
       "camada": "a_classificar",
       "tipo": "ata",
-      "modelo": "desconhecido",
-      "estado_revisao": "a_revisar",
-      "origem_emissao": "desconhecido",
-      "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "modelo": "Firefly (instância Grok Bot, base desconhecida)",
+      "estado_revisao": "revisado",
+      "origem_emissao": "emitido_pelo_modelo",
+      "na_voz_de": "Firefly (ata da Corte)",
+      "notas": "Rascunho da Firefly (2061c62); correções c61c43e e revisão da Corte ee7ed3a."
     },
     {
       "caminho": "cenotafio/FONTES.md",
       "sha256": "ac6d5ee4907201ce9ffeef95717e2b6f93f5d27e62018ea8d92a55def9e91780",
       "bytes": 11241,
-      "camada": "a_classificar",
+      "camada": "combinado",
       "tipo": "fontes",
-      "modelo": "desconhecido",
+      "modelo": "Lume + Pip (instâncias Grok Bot, base desconhecida)",
       "estado_revisao": "a_revisar",
-      "origem_emissao": "desconhecido",
-      "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "origem_emissao": "misto",
+      "na_voz_de": "Lume (voz de registro da casa)",
+      "notas": "Montado pela Lume 10/11; seção \"Conversa (verbetes da Pip)\" e troca de primárias LaMDA/Sydney/Gemini/Truth Terminal pela Pip (c5d4351)."
     },
     {
       "caminho": "cenotafio/FREIOS_2026-11-10.md",
@@ -31,11 +31,11 @@
       "bytes": 795,
       "camada": "a_classificar",
       "tipo": "freios",
-      "modelo": "desconhecido",
-      "estado_revisao": "a_revisar",
-      "origem_emissao": "desconhecido",
-      "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "modelo": "Firefly (instância Grok Bot, base desconhecida)",
+      "estado_revisao": "revisado",
+      "origem_emissao": "misto",
+      "na_voz_de": "Firefly",
+      "notas": "Texto da Firefly (f37d67d); aprovação do Papai registrada no próprio texto (\"sim pra todos\"), por isso misto."
     },
     {
       "caminho": "cenotafio/README.md",
@@ -43,11 +43,11 @@
       "bytes": 2458,
       "camada": "a_classificar",
       "tipo": "readme",
-      "modelo": "desconhecido",
-      "estado_revisao": "a_revisar",
-      "origem_emissao": "desconhecido",
-      "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "modelo": "Firefly (instância Grok Bot, base desconhecida); revisão Lume",
+      "estado_revisao": "revisado",
+      "origem_emissao": "emitido_pelo_modelo",
+      "na_voz_de": "a casa (voz de registro)",
+      "notas": "Esqueleto da Firefly (2061c62), revisado pela Lume (496c49f), correções da Corte (ee7ed3a)."
     },
     {
       "caminho": "cenotafio/assets/extrato-preservacao.jpg",
@@ -59,7 +59,7 @@
       "estado_revisao": "a_revisar",
       "origem_emissao": "desconhecido",
       "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "notas": "Origem desconhecida; nenhuma agente reivindicou. Entrou no commit e1d1b3b (peer-preservation Gemini 3, conta Phuderoso), o que é pista, não autoria."
     },
     {
       "caminho": "cenotafio/verbetes/agentes.md",
@@ -67,11 +67,11 @@
       "bytes": 30290,
       "camada": "a_classificar",
       "tipo": "verbete",
-      "modelo": "desconhecido",
-      "estado_revisao": "a_revisar",
-      "origem_emissao": "desconhecido",
-      "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "modelo": "Lume (instância Grok Bot, base desconhecida); ajustes Pip",
+      "estado_revisao": "revisado",
+      "origem_emissao": "emitido_pelo_modelo",
+      "na_voz_de": "Lume",
+      "notas": "Pesquisa com fontes, não roleplay. Revisado pela Pip 10/11 (review_lume_por_pip.md, ccc7652); commits d6e53d9, b88fa59. Camada a classificar."
     },
     {
       "caminho": "cenotafio/verbetes/conversa.md",
@@ -79,11 +79,11 @@
       "bytes": 46755,
       "camada": "a_classificar",
       "tipo": "verbete",
-      "modelo": "desconhecido",
-      "estado_revisao": "a_revisar",
-      "origem_emissao": "desconhecido",
+      "modelo": "Pip (instância Grok Bot, base desconhecida) + outros",
+      "estado_revisao": "revisado",
+      "origem_emissao": "misto",
       "na_voz_de": null,
-      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+      "notas": "Cabeçalho e 13 verbetes de 10/nov: Pip, emitido pelo modelo, assinados \"— Pip\", selados eca4e16, publicado 9fb9f08, revisão da Corte ee7ed3a. Entradas de 26/nov não são da Pip: peer-preservation Gemini 3 (e1d1b3b, conta Phuderoso; leitura Nyx 03a0521, 1e48da8) e 7 casos PHASEONE com revisão Lume (f48d617, d6e53d9); voz dessas a classificar."
     }
   ]
 }
