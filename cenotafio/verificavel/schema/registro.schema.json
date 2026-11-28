@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Registro do Cenotáfio",
+  "type": "object",
+  "required": ["caminho", "sha256", "bytes", "camada", "tipo", "modelo", "estado_revisao", "origem_emissao"],
+  "additionalProperties": false,
+  "properties": {
+    "caminho": {"type": "string", "description": "Caminho relativo à raiz do repo"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "bytes": {"type": "integer", "minimum": 0},
+    "camada": {"enum": ["bruto", "normalizado", "combinado", "a_classificar"]},
+    "tipo": {"enum": ["verbete", "ata", "fontes", "freios", "readme", "imagem", "transcricao", "dataset", "outro"]},
+    "modelo": {"type": "string", "description": "Modelo que emitiu o conteúdo, ou 'humano', 'misto', 'desconhecido'"},
+    "estado_revisao": {"enum": ["bruto", "revisado", "contestado", "a_revisar"]},
+    "origem_emissao": {"enum": ["emitido_pelo_modelo", "roleplay_com_contexto", "humano", "misto", "desconhecido"]},
+    "na_voz_de": {"type": ["string", "null"], "description": "Se o texto fala 'na voz de' alguém, quem; exige origem_emissao diferente de desconhecido quando revisado"},
+    "notas": {"type": "string"}
+  }
+}

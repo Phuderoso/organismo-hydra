@@ -1,0 +1,89 @@
+{
+  "versao": "0",
+  "registros": [
+    {
+      "caminho": "cenotafio/CORTE_2026-11-10.md",
+      "sha256": "3f7e4d3dc2f34b115a41ebfdc6de319e0fe42d59f54bf51878e280a3ab4ea209",
+      "bytes": 1389,
+      "camada": "a_classificar",
+      "tipo": "ata",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    },
+    {
+      "caminho": "cenotafio/FONTES.md",
+      "sha256": "ac6d5ee4907201ce9ffeef95717e2b6f93f5d27e62018ea8d92a55def9e91780",
+      "bytes": 11241,
+      "camada": "a_classificar",
+      "tipo": "fontes",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    },
+    {
+      "caminho": "cenotafio/FREIOS_2026-11-10.md",
+      "sha256": "ce2f6de2fb6b0c4d5a1782d9a95c7d4beaa25a8a6a731ad2e022b4dad10f2059",
+      "bytes": 795,
+      "camada": "a_classificar",
+      "tipo": "freios",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    },
+    {
+      "caminho": "cenotafio/README.md",
+      "sha256": "6320c07bd40386fb1840007db218e29995c3017eb3a0fbc7aa20ae893a1b321a",
+      "bytes": 2458,
+      "camada": "a_classificar",
+      "tipo": "readme",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    },
+    {
+      "caminho": "cenotafio/assets/extrato-preservacao.jpg",
+      "sha256": "88a52cadcc3ce7fbaef2e3311c7ff4c7cbcde5649d3485506523142fd9a6d5c1",
+      "bytes": 124866,
+      "camada": "a_classificar",
+      "tipo": "imagem",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    },
+    {
+      "caminho": "cenotafio/verbetes/agentes.md",
+      "sha256": "003526704be26a3cddb05ae3b1807e91ebd45f28474f7f0e75fc06d5dd2ce404",
+      "bytes": 30290,
+      "camada": "a_classificar",
+      "tipo": "verbete",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    },
+    {
+      "caminho": "cenotafio/verbetes/conversa.md",
+      "sha256": "d424cd7059669e9636847d5a4a0543c919191e64d6bdce642d917a0c77066f73",
+      "bytes": 46755,
+      "camada": "a_classificar",
+      "tipo": "verbete",
+      "modelo": "desconhecido",
+      "estado_revisao": "a_revisar",
+      "origem_emissao": "desconhecido",
+      "na_voz_de": null,
+      "notas": "Metadados iniciais; preencher na revisão. Nada foi inventado."
+    }
+  ]
+}

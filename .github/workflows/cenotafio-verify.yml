@@ -1,0 +1,15 @@
+name: cenotafio-verify
+on:
+  push:
+    paths: ["cenotafio/**", "tools/cenotafio_verify.py"]
+  pull_request:
+    paths: ["cenotafio/**", "tools/cenotafio_verify.py"]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/cenotafio_verify.py
